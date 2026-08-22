@@ -216,3 +216,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Flow
+/Problem Statement.pdf
+.serena/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.egg-info/
+
+# Keep the folders in git (via .gitkeep). Ignore everything else in them.
+data/raw/**
+!data/raw/.gitkeep
+artifacts/**
+!artifacts/.gitkeep
+
+# Vector store / local DBs
+chroma_store/
+.chroma/
+.chromadb/
+chroma/
+*.db
+*.sqlite3
+
+dist/
