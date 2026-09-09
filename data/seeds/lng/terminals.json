@@ -1,0 +1,98 @@
+[
+  {
+    "id": "dahej",
+    "name": "Dahej LNG",
+    "operator": "Petronet LNG",
+    "lat": 21.71,
+    "lon": 72.57,
+    "capacity_mtpa": 17.5,
+    "year": 2025,
+    "port": "dahej",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "hazira_lng",
+    "name": "Hazira LNG",
+    "operator": "Shell",
+    "lat": 21.12,
+    "lon": 72.65,
+    "capacity_mtpa": 5.0,
+    "year": 2025,
+    "port": "hazira",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "dabhol_lng",
+    "name": "Dabhol LNG",
+    "operator": "Konkan LNG / GAIL",
+    "lat": 17.54,
+    "lon": 73.16,
+    "capacity_mtpa": 5.0,
+    "year": 2025,
+    "port": "dabhol",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "kochi_lng",
+    "name": "Kochi LNG",
+    "operator": "Petronet LNG",
+    "lat": 9.97,
+    "lon": 76.24,
+    "capacity_mtpa": 5.0,
+    "year": 2025,
+    "port": "kochi",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "ennore_lng",
+    "name": "Ennore LNG",
+    "operator": "IOCL",
+    "lat": 13.26,
+    "lon": 80.34,
+    "capacity_mtpa": 5.0,
+    "year": 2025,
+    "port": "ennore",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "mundra_lng",
+    "name": "Mundra LNG",
+    "operator": "GSPC LNG",
+    "lat": 22.74,
+    "lon": 69.71,
+    "capacity_mtpa": 5.0,
+    "year": 2025,
+    "port": "mundra",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "dhamra_lng",
+    "name": "Dhamra LNG",
+    "operator": "Adani",
+    "lat": 20.82,
+    "lon": 87.0,
+    "capacity_mtpa": 5.0,
+    "year": 2025,
+    "port": "dhamra",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  },
+  {
+    "id": "jaigarh_lng",
+    "name": "Jaigarh LNG",
+    "operator": "H-Energy",
+    "lat": 17.3,
+    "lon": 73.19,
+    "capacity_mtpa": 4.0,
+    "year": 2025,
+    "port": "jaigarh",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source_url": "https://giignl.org/"
+  }
+]

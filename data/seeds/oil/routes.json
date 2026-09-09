@@ -1,0 +1,182 @@
+[
+  {
+    "id": "oil-RU-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "RU",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_sez",
+    "volume": 92.009,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-IQ-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "IQ",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_dta",
+    "volume": 50.091,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-SA-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "SA",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "vadinar_ref",
+    "volume": 31.723,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-AE-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "AE",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "mundra",
+    "indian_facility": "koyali",
+    "volume": 21.251,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-NG-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "NG",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "mumbai",
+    "indian_facility": "bpcl_mumbai",
+    "volume": 6.396,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-US-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "US",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_sez",
+    "volume": 5.959,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-AO-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "AO",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_dta",
+    "volume": 5.782,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-KW-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "KW",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "vadinar_ref",
+    "volume": 5.252,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-VE-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "VE",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_sez",
+    "volume": 3.729,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-CO-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "CO",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_dta",
+    "volume": 3.442,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-MX-sikka",
+    "commodity": "crude_oil",
+    "supplier_iso": "MX",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "sikka",
+    "indian_facility": "jamnagar_sez",
+    "volume": 3.25,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "oil-XX-paradip",
+    "commodity": "crude_oil",
+    "supplier_iso": "XX",
+    "chokepoints": [
+      "malacca"
+    ],
+    "indian_port": "paradip",
+    "indian_facility": "paradip_ref",
+    "volume": 12.866,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  }
+]

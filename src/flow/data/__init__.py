@@ -1,1 +1,1 @@
-"""Seed loaders. Filled in phase 2."""
+"""Seed loaders and GDELT fetch."""

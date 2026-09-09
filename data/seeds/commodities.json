@@ -1,0 +1,32 @@
+[
+  {
+    "id": "crude_oil",
+    "name": "Crude oil",
+    "family": "oil",
+    "unit": "mmt"
+  },
+  {
+    "id": "lng",
+    "name": "LNG",
+    "family": "gas",
+    "unit": "mmt"
+  },
+  {
+    "id": "urea",
+    "name": "Urea",
+    "family": "fertilizer",
+    "unit": "mmt"
+  },
+  {
+    "id": "dap",
+    "name": "DAP",
+    "family": "fertilizer",
+    "unit": "mmt"
+  },
+  {
+    "id": "mop",
+    "name": "MOP",
+    "family": "fertilizer",
+    "unit": "mmt"
+  }
+]

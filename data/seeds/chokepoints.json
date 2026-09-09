@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hormuz",
+    "name": "Strait of Hormuz",
+    "lat": 26.5667,
+    "lon": 56.25,
+    "transit_volume": 20.9,
+    "transit_unit": "mbpd",
+    "year": 2025,
+    "source": "EIA World Oil Transit Chokepoints, 1H25 average, last updated 3 Mar 2026",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "malacca",
+    "name": "Strait of Malacca",
+    "lat": 2.5,
+    "lon": 101.27,
+    "transit_volume": 23.2,
+    "transit_unit": "mbpd",
+    "year": 2025,
+    "source": "EIA World Oil Transit Chokepoints, 1H25 average, last updated 3 Mar 2026",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "bab_el_mandeb",
+    "name": "Bab el-Mandeb",
+    "lat": 12.5833,
+    "lon": 43.3333,
+    "transit_volume": 4.2,
+    "transit_unit": "mbpd",
+    "year": 2025,
+    "source": "EIA World Oil Transit Chokepoints, 1H25 average, last updated 3 Mar 2026",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "suez",
+    "name": "Suez Canal / SUMED",
+    "lat": 30.45,
+    "lon": 32.35,
+    "transit_volume": 4.9,
+    "transit_unit": "mbpd",
+    "year": 2025,
+    "source": "EIA World Oil Transit Chokepoints, 1H25 average, last updated 3 Mar 2026",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "cape",
+    "name": "Cape of Good Hope",
+    "lat": -34.358,
+    "lon": 18.474,
+    "transit_volume": 9.1,
+    "transit_unit": "mbpd",
+    "year": 2025,
+    "source": "EIA World Oil Transit Chokepoints, 1H25 average, last updated 3 Mar 2026",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  }
+]

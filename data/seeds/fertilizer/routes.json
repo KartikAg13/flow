@@ -1,0 +1,229 @@
+[
+  {
+    "id": "urea-OM-kandla",
+    "commodity": "urea",
+    "supplier_iso": "OM",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 2.613,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "urea-RU-kandla",
+    "commodity": "urea",
+    "supplier_iso": "RU",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.923,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "urea-SA-kandla",
+    "commodity": "urea",
+    "supplier_iso": "SA",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.538,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "urea-QA-kandla",
+    "commodity": "urea",
+    "supplier_iso": "QA",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.37,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "urea-NG-kandla",
+    "commodity": "urea",
+    "supplier_iso": "NG",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.283,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "urea-XX-paradip",
+    "commodity": "urea",
+    "supplier_iso": "XX",
+    "chokepoints": [
+      "malacca"
+    ],
+    "indian_port": "paradip",
+    "indian_facility": null,
+    "volume": 0.92,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "dap-SA-kandla",
+    "commodity": "dap",
+    "supplier_iso": "SA",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 1.905,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "dap-MA-kandla",
+    "commodity": "dap",
+    "supplier_iso": "MA",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 1.074,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "dap-CN-paradip",
+    "commodity": "dap",
+    "supplier_iso": "CN",
+    "chokepoints": [
+      "malacca"
+    ],
+    "indian_port": "paradip",
+    "indian_facility": null,
+    "volume": 0.847,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "dap-XX-kakinada",
+    "commodity": "dap",
+    "supplier_iso": "XX",
+    "chokepoints": [
+      "malacca"
+    ],
+    "indian_port": "kakinada",
+    "indian_facility": null,
+    "volume": 0.743,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "mop-RU-kandla",
+    "commodity": "mop",
+    "supplier_iso": "RU",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 1.8,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "mop-CA-kandla",
+    "commodity": "mop",
+    "supplier_iso": "CA",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.883,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "mop-JO-kandla",
+    "commodity": "mop",
+    "supplier_iso": "JO",
+    "chokepoints": [
+      "suez",
+      "bab_el_mandeb"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.301,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "mop-IL-kandla",
+    "commodity": "mop",
+    "supplier_iso": "IL",
+    "chokepoints": [
+      "suez",
+      "bab_el_mandeb"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.28,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "mop-TM-kandla",
+    "commodity": "mop",
+    "supplier_iso": "TM",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "kandla",
+    "indian_facility": null,
+    "volume": 0.277,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  }
+]

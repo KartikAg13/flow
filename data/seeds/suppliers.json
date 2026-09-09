@@ -1,0 +1,106 @@
+[
+  {
+    "iso": "IN",
+    "name": "India"
+  },
+  {
+    "iso": "RU",
+    "name": "Russia"
+  },
+  {
+    "iso": "IQ",
+    "name": "Iraq"
+  },
+  {
+    "iso": "SA",
+    "name": "Saudi Arabia"
+  },
+  {
+    "iso": "AE",
+    "name": "United Arab Emirates"
+  },
+  {
+    "iso": "US",
+    "name": "United States"
+  },
+  {
+    "iso": "NG",
+    "name": "Nigeria"
+  },
+  {
+    "iso": "AO",
+    "name": "Angola"
+  },
+  {
+    "iso": "KW",
+    "name": "Kuwait"
+  },
+  {
+    "iso": "VE",
+    "name": "Venezuela"
+  },
+  {
+    "iso": "CO",
+    "name": "Colombia"
+  },
+  {
+    "iso": "MX",
+    "name": "Mexico"
+  },
+  {
+    "iso": "QA",
+    "name": "Qatar"
+  },
+  {
+    "iso": "OM",
+    "name": "Oman"
+  },
+  {
+    "iso": "GQ",
+    "name": "Equatorial Guinea"
+  },
+  {
+    "iso": "CM",
+    "name": "Cameroon"
+  },
+  {
+    "iso": "MZ",
+    "name": "Mozambique"
+  },
+  {
+    "iso": "TT",
+    "name": "Trinidad and Tobago"
+  },
+  {
+    "iso": "AU",
+    "name": "Australia"
+  },
+  {
+    "iso": "MA",
+    "name": "Morocco"
+  },
+  {
+    "iso": "CN",
+    "name": "China"
+  },
+  {
+    "iso": "CA",
+    "name": "Canada"
+  },
+  {
+    "iso": "JO",
+    "name": "Jordan"
+  },
+  {
+    "iso": "IL",
+    "name": "Israel"
+  },
+  {
+    "iso": "TM",
+    "name": "Turkmenistan"
+  },
+  {
+    "iso": "XX",
+    "name": "Other"
+  }
+]

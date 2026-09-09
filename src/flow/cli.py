@@ -1,17 +1,18 @@
-"""CLI entrypoint. Grow commands in the phase that owns them."""
+"""CLI entrypoint."""
 
 from __future__ import annotations
 
 import typer
 
-from flow import LOCKED, __version__
-from flow.system.requirements import LAYERS, NFR, USE_CASES
+from flow import __version__
 
 app = typer.Typer(
     no_args_is_help=True,
     add_completion=False,
     help="Flow: critical-import resilience (oil, LNG, fertilizers).",
 )
+data_app = typer.Typer(no_args_is_help=True, help="Fetch data.")
+app.add_typer(data_app, name="data")
 
 
 @app.command()
@@ -20,31 +21,22 @@ def version() -> None:
     typer.echo(__version__)
 
 
-@app.command()
-def direction() -> None:
-    """Print the frozen scope so you do not have to open the docs."""
-    typer.echo("Flow — locked direction")
-    typer.echo(f"  version      {__version__}")
-    for key, value in LOCKED.items():
-        if isinstance(value, tuple):
-            value = ", ".join(value)
-        typer.echo(f"  {key:<12} {value}")
-    typer.echo("  docs         docs/DIRECTION.md")
-    typer.echo("  next step    docs/PHASES.md  (Phase 1, steps 1.1 and 1.2)")
-    typer.echo("  design       uv run flow design")
+@data_app.command("gdelt")
+def gdelt(
+    slices: int = typer.Option(1, min=1, help="How many 15-minute GKG slices to pull."),
+) -> None:
+    """Download GDELT 2.0 GKG, filter, write data/raw/events.jsonl."""
+    from flow.data.gdelt import fetch
+
+    path = fetch(slices=slices)
+    n = sum(1 for _ in path.open(encoding="utf-8"))
+    typer.echo(f"{n} events -> {path}")
 
 
-@app.command()
-def design() -> None:
-    """Print the system-design skeleton (layers, use cases, NFRs)."""
-    typer.echo("Layers")
-    for layer in LAYERS:
-        typer.echo(f"  {layer}")
-    typer.echo("Use cases")
-    for uc in USE_CASES:
-        llm = "llm" if uc.needs_llm else "no-llm"
-        typer.echo(f"  {uc.id}  {uc.name}  [{llm}]")
-    typer.echo("NFRs")
-    for item in NFR:
-        typer.echo(f"  {item.id}  {item.quality}: {item.target}")
-    typer.echo("docs/SYSTEM-DESIGN.md")
+@data_app.command("build")
+def build_db() -> None:
+    """Rebuild data/flow.db from seed JSON (and events.jsonl if present)."""
+    from flow.data.build import build
+
+    path = build()
+    typer.echo(f"built {path}")

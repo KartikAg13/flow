@@ -1,0 +1,262 @@
+[
+  {
+    "id": "sikka",
+    "name": "Sikka",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 22.43,
+    "lon": 69.83,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "vadinar",
+    "name": "Vadinar",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 22.37,
+    "lon": 69.72,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "mundra",
+    "name": "Mundra",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 22.74,
+    "lon": 69.71,
+    "commodities": [
+      "crude_oil",
+      "lng",
+      "urea",
+      "dap",
+      "mop"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "mumbai",
+    "name": "Mumbai",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 18.95,
+    "lon": 72.85,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "mangalore",
+    "name": "New Mangalore",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 12.87,
+    "lon": 74.84,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "kochi",
+    "name": "Kochi",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 9.97,
+    "lon": 76.24,
+    "commodities": [
+      "crude_oil",
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "kandla",
+    "name": "Kandla",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 23.03,
+    "lon": 70.22,
+    "commodities": [
+      "urea",
+      "dap",
+      "mop"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "dahej",
+    "name": "Dahej",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 21.71,
+    "lon": 72.57,
+    "commodities": [
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "hazira",
+    "name": "Hazira",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 21.12,
+    "lon": 72.65,
+    "commodities": [
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "dabhol",
+    "name": "Dabhol",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 17.54,
+    "lon": 73.16,
+    "commodities": [
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "jaigarh",
+    "name": "Jaigarh",
+    "country_iso": "IN",
+    "coast": "west",
+    "lat": 17.3,
+    "lon": 73.19,
+    "commodities": [
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "paradip",
+    "name": "Paradip",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 20.26,
+    "lon": 86.67,
+    "commodities": [
+      "crude_oil",
+      "urea",
+      "dap"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "visakhapatnam",
+    "name": "Visakhapatnam",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 17.69,
+    "lon": 83.3,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "haldia",
+    "name": "Haldia",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 22.04,
+    "lon": 88.06,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "chennai",
+    "name": "Chennai",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 13.08,
+    "lon": 80.29,
+    "commodities": [
+      "crude_oil"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "ennore",
+    "name": "Ennore",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 13.26,
+    "lon": 80.34,
+    "commodities": [
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "dhamra",
+    "name": "Dhamra",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 20.82,
+    "lon": 87.0,
+    "commodities": [
+      "lng"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "kakinada",
+    "name": "Kakinada",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 16.98,
+    "lon": 82.28,
+    "commodities": [
+      "urea",
+      "dap",
+      "mop"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  },
+  {
+    "id": "krishnapatnam",
+    "name": "Krishnapatnam",
+    "country_iso": "IN",
+    "coast": "east",
+    "lat": 14.25,
+    "lon": 80.13,
+    "commodities": [
+      "urea",
+      "dap",
+      "mop"
+    ],
+    "source": "IPA / World Port Index coordinates (approx port location)",
+    "source_url": "https://www.ipa.nic.in/"
+  }
+]

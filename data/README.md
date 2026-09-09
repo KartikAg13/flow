@@ -2,7 +2,7 @@
 
 We need two kinds of data.
 
-The static pile is who sells India crude, LNG, urea, DAP, and MOP; which Indian ports and plants take it; which sea lanes it crosses. Type those from official tables. Store them as JSON or CSV with a year and a source on every number.
+The static pile is who sells India crude, LNG, urea, DAP, and MOP; which Indian ports and plants take it; which sea lanes it crosses. Type those from official tables into JSON (with a year and a source on every number). A loader builds `data/flow.db` from that JSON. You edit JSON. Code queries SQLite. Table list: [TABLES.md](TABLES.md).
 
 The live pile is news. We pull that from GDELT and add fertilizer keywords so a urea story is not dropped because it never said "oil".
 

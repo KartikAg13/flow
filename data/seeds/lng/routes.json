@@ -1,0 +1,165 @@
+[
+  {
+    "id": "lng-QA-dahej",
+    "commodity": "lng",
+    "supplier_iso": "QA",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 11.304,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-US-dahej",
+    "commodity": "lng",
+    "supplier_iso": "US",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 5.42,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-AE-hazira",
+    "commodity": "lng",
+    "supplier_iso": "AE",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "hazira",
+    "indian_facility": "hazira_lng",
+    "volume": 3.164,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-AO-dahej",
+    "commodity": "lng",
+    "supplier_iso": "AO",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 1.968,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-OM-dahej",
+    "commodity": "lng",
+    "supplier_iso": "OM",
+    "chokepoints": [
+      "hormuz"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 1.459,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-NG-dahej",
+    "commodity": "lng",
+    "supplier_iso": "NG",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 1.424,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-GQ-dahej",
+    "commodity": "lng",
+    "supplier_iso": "GQ",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 0.967,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-CM-dahej",
+    "commodity": "lng",
+    "supplier_iso": "CM",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 0.795,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-MZ-dhamra",
+    "commodity": "lng",
+    "supplier_iso": "MZ",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dhamra",
+    "indian_facility": "dhamra_lng",
+    "volume": 0.588,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-TT-dahej",
+    "commodity": "lng",
+    "supplier_iso": "TT",
+    "chokepoints": [
+      "cape"
+    ],
+    "indian_port": "dahej",
+    "indian_facility": "dahej",
+    "volume": 0.38,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  },
+  {
+    "id": "lng-XX-kochi",
+    "commodity": "lng",
+    "supplier_iso": "XX",
+    "chokepoints": [],
+    "indian_port": "kochi",
+    "indian_facility": "kochi_lng",
+    "volume": 0.325,
+    "unit": "mmt",
+    "year": 2024,
+    "source": "Assigned from import mix and typical seaborne path to west-coast India",
+    "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+  }
+]

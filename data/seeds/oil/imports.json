@@ -1,0 +1,134 @@
+[
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "RU",
+    "supplier_name": "Russia",
+    "volume": 92.009,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.3806,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "IQ",
+    "supplier_name": "Iraq",
+    "volume": 50.091,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.2072,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "SA",
+    "supplier_name": "Saudi Arabia",
+    "volume": 31.723,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.1312,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "AE",
+    "supplier_name": "United Arab Emirates",
+    "volume": 21.251,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0879,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "NG",
+    "supplier_name": "Nigeria",
+    "volume": 6.396,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0265,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "US",
+    "supplier_name": "United States",
+    "volume": 5.959,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0247,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "AO",
+    "supplier_name": "Angola",
+    "volume": 5.782,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0239,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "KW",
+    "supplier_name": "Kuwait",
+    "volume": 5.252,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0217,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "VE",
+    "supplier_name": "Venezuela",
+    "volume": 3.729,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0154,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "CO",
+    "supplier_name": "Colombia",
+    "volume": 3.442,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0142,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "MX",
+    "supplier_name": "Mexico",
+    "volume": 3.25,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0134,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  },
+  {
+    "commodity": "crude_oil",
+    "supplier_iso": "XX",
+    "supplier_name": "Other",
+    "volume": 12.866,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0532,
+    "source": "WITS/UN Comtrade HS 2709 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
+  }
+]

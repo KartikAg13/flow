@@ -1,0 +1,123 @@
+[
+  {
+    "commodity": "lng",
+    "supplier_iso": "QA",
+    "supplier_name": "Qatar",
+    "volume": 11.304,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.4067,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "US",
+    "supplier_name": "United States",
+    "volume": 5.42,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.195,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "AE",
+    "supplier_name": "United Arab Emirates",
+    "volume": 3.164,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.1138,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "AO",
+    "supplier_name": "Angola",
+    "volume": 1.968,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0708,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "OM",
+    "supplier_name": "Oman",
+    "volume": 1.459,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0525,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "NG",
+    "supplier_name": "Nigeria",
+    "volume": 1.424,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0512,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "GQ",
+    "supplier_name": "Equatorial Guinea",
+    "volume": 0.967,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0348,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "CM",
+    "supplier_name": "Cameroon",
+    "volume": 0.795,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0286,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "MZ",
+    "supplier_name": "Mozambique",
+    "volume": 0.588,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0212,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "TT",
+    "supplier_name": "Trinidad and Tobago",
+    "volume": 0.38,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0137,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  },
+  {
+    "commodity": "lng",
+    "supplier_iso": "XX",
+    "supplier_name": "Other",
+    "volume": 0.325,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0117,
+    "source": "WITS/UN Comtrade HS 271111 quantity, calendar 2024",
+    "source_url": "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
+  }
+]

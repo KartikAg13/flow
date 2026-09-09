@@ -1,0 +1,167 @@
+[
+  {
+    "commodity": "urea",
+    "supplier_iso": "OM",
+    "supplier_name": "Oman",
+    "volume": 2.613,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.4627,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "urea",
+    "supplier_iso": "RU",
+    "supplier_name": "Russia",
+    "volume": 0.923,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.1634,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "urea",
+    "supplier_iso": "SA",
+    "supplier_name": "Saudi Arabia",
+    "volume": 0.538,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0953,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "urea",
+    "supplier_iso": "QA",
+    "supplier_name": "Qatar",
+    "volume": 0.37,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0655,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "urea",
+    "supplier_iso": "NG",
+    "supplier_name": "Nigeria",
+    "volume": 0.283,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0501,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "urea",
+    "supplier_iso": "XX",
+    "supplier_name": "Other",
+    "volume": 0.92,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.1629,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "dap",
+    "supplier_iso": "SA",
+    "supplier_name": "Saudi Arabia",
+    "volume": 1.905,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.417,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "dap",
+    "supplier_iso": "MA",
+    "supplier_name": "Morocco",
+    "volume": 1.074,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.2351,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "dap",
+    "supplier_iso": "CN",
+    "supplier_name": "China",
+    "volume": 0.847,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.1854,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "dap",
+    "supplier_iso": "XX",
+    "supplier_name": "Other",
+    "volume": 0.743,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.1626,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "mop",
+    "supplier_iso": "RU",
+    "supplier_name": "Russia",
+    "volume": 1.8,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.5083,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "mop",
+    "supplier_iso": "CA",
+    "supplier_name": "Canada",
+    "volume": 0.883,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.2494,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "mop",
+    "supplier_iso": "JO",
+    "supplier_name": "Jordan",
+    "volume": 0.301,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.085,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "mop",
+    "supplier_iso": "IL",
+    "supplier_name": "Israel",
+    "volume": 0.28,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0791,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  },
+  {
+    "commodity": "mop",
+    "supplier_iso": "TM",
+    "supplier_name": "Turkmenistan",
+    "volume": 0.277,
+    "unit": "mmt",
+    "year": 2024,
+    "share_of_india_imports": 0.0782,
+    "source": "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
+    "source_url": "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+  }
+]

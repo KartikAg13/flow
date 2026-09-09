@@ -1,0 +1,94 @@
+[
+  {
+    "id": "iffco_kalol",
+    "name": "IFFCO Kalol",
+    "operator": "IFFCO",
+    "products": [
+      "urea"
+    ],
+    "lat": 23.25,
+    "lon": 72.49,
+    "nearest_port": "kandla",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  },
+  {
+    "id": "iffco_paradeep",
+    "name": "IFFCO Paradeep",
+    "operator": "IFFCO",
+    "products": [
+      "dap",
+      "urea"
+    ],
+    "lat": 20.26,
+    "lon": 86.61,
+    "nearest_port": "paradip",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  },
+  {
+    "id": "nfl_nangal",
+    "name": "NFL Nangal",
+    "operator": "NFL",
+    "products": [
+      "urea"
+    ],
+    "lat": 31.37,
+    "lon": 76.38,
+    "nearest_port": "mumbai",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  },
+  {
+    "id": "rcf_thal",
+    "name": "RCF Thal",
+    "operator": "RCF",
+    "products": [
+      "urea"
+    ],
+    "lat": 18.73,
+    "lon": 72.87,
+    "nearest_port": "mumbai",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  },
+  {
+    "id": "rcf_trombay",
+    "name": "RCF Trombay",
+    "operator": "RCF",
+    "products": [
+      "urea"
+    ],
+    "lat": 19.0,
+    "lon": 72.9,
+    "nearest_port": "mumbai",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  },
+  {
+    "id": "chambal_kota",
+    "name": "Chambal Fertilizers Kota",
+    "operator": "CFCL",
+    "products": [
+      "urea"
+    ],
+    "lat": 25.18,
+    "lon": 75.83,
+    "nearest_port": "kandla",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  },
+  {
+    "id": "kribhco_hazira",
+    "name": "KRIBHCO Hazira",
+    "operator": "KRIBHCO",
+    "products": [
+      "urea"
+    ],
+    "lat": 21.12,
+    "lon": 72.65,
+    "nearest_port": "hazira",
+    "source": "Company sites; DoF plant list",
+    "source_url": "https://www.fert.nic.in/"
+  }
+]
