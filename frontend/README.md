@@ -14,6 +14,15 @@ npm install
 npm run dev
 ```
 
+`npm install` must finish without `ERESOLVE`. If npm blocks esbuild's install script (npm 12 does this by default), run this once, then `npm run dev` again:
+
+```bash
+npm install-scripts approve esbuild
+npm rebuild esbuild
+```
+
+Open http://localhost:5173/ . Do not run this from the repo root; Vite lives in `frontend/`.
+
 Open the printed local URL. `npm run build` produces a static `dist/` you can
 host anywhere; `npm run preview` serves that build locally.
 
