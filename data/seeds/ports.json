@@ -10,7 +10,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "vadinar",
@@ -23,7 +23,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "mundra",
@@ -40,7 +40,7 @@
       "mop"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "mumbai",
@@ -53,7 +53,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "mangalore",
@@ -66,7 +66,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "kochi",
@@ -80,7 +80,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "kandla",
@@ -95,7 +95,7 @@
       "mop"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "dahej",
@@ -108,7 +108,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "hazira",
@@ -121,7 +121,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "dabhol",
@@ -134,7 +134,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "jaigarh",
@@ -147,7 +147,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "paradip",
@@ -162,7 +162,7 @@
       "dap"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "visakhapatnam",
@@ -175,7 +175,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "haldia",
@@ -188,7 +188,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "chennai",
@@ -201,7 +201,7 @@
       "crude_oil"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "ennore",
@@ -214,7 +214,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "dhamra",
@@ -227,7 +227,7 @@
       "lng"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "kakinada",
@@ -242,7 +242,7 @@
       "mop"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   },
   {
     "id": "krishnapatnam",
@@ -257,6 +257,6 @@
       "mop"
     ],
     "source": "IPA / World Port Index coordinates (approx port location)",
-    "source_url": "https://www.ipa.nic.in/"
+    "source_url": "https://www.ipa.org.in/"
   }
 ]

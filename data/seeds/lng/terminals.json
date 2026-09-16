@@ -5,10 +5,10 @@
     "operator": "Petronet LNG",
     "lat": 21.71,
     "lon": 72.57,
-    "capacity_mtpa": 17.5,
-    "year": 2025,
+    "capacity_mtpa": 22.5,
+    "year": 2026,
     "port": "dahej",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -18,9 +18,9 @@
     "lat": 21.12,
     "lon": 72.65,
     "capacity_mtpa": 5.0,
-    "year": 2025,
+    "year": 2026,
     "port": "hazira",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -30,9 +30,9 @@
     "lat": 17.54,
     "lon": 73.16,
     "capacity_mtpa": 5.0,
-    "year": 2025,
+    "year": 2026,
     "port": "dabhol",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -42,9 +42,9 @@
     "lat": 9.97,
     "lon": 76.24,
     "capacity_mtpa": 5.0,
-    "year": 2025,
+    "year": 2026,
     "port": "kochi",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -54,9 +54,9 @@
     "lat": 13.26,
     "lon": 80.34,
     "capacity_mtpa": 5.0,
-    "year": 2025,
+    "year": 2026,
     "port": "ennore",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -66,9 +66,9 @@
     "lat": 22.74,
     "lon": 69.71,
     "capacity_mtpa": 5.0,
-    "year": 2025,
+    "year": 2026,
     "port": "mundra",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -78,9 +78,9 @@
     "lat": 20.82,
     "lon": 87.0,
     "capacity_mtpa": 5.0,
-    "year": 2025,
+    "year": 2026,
     "port": "dhamra",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   },
   {
@@ -90,9 +90,9 @@
     "lat": 17.3,
     "lon": 73.19,
     "capacity_mtpa": 4.0,
-    "year": 2025,
+    "year": 2026,
     "port": "jaigarh",
-    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+    "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
     "source_url": "https://giignl.org/"
   }
 ]

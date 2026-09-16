@@ -111,9 +111,7 @@ def latest_gkg_stamp(client: httpx.Client) -> str:
 
 def gkg_stamps(latest: str, slices: int) -> list[str]:
     start = datetime.strptime(latest, "%Y%m%d%H%M%S")
-    return [
-        (start - timedelta(minutes=15 * i)).strftime("%Y%m%d%H%M%S") for i in range(slices)
-    ]
+    return [(start - timedelta(minutes=15 * i)).strftime("%Y%m%d%H%M%S") for i in range(slices)]
 
 
 def load_gkg(client: httpx.Client, stamp: str) -> pd.DataFrame:
@@ -131,6 +129,7 @@ def load_gkg(client: httpx.Client, stamp: str) -> pd.DataFrame:
             names=GKG_COLUMNS,
             dtype=str,
             on_bad_lines="skip",
+            encoding_errors="replace",
         )
 
 

@@ -3,9 +3,7 @@
     "id": "urea-OM-kandla",
     "commodity": "urea",
     "supplier_iso": "OM",
-    "chokepoints": [
-      "hormuz"
-    ],
+    "chokepoints": [],
     "indian_port": "kandla",
     "indian_facility": null,
     "volume": 2.613,
@@ -184,7 +182,6 @@
     "commodity": "mop",
     "supplier_iso": "JO",
     "chokepoints": [
-      "suez",
       "bab_el_mandeb"
     ],
     "indian_port": "kandla",
@@ -200,7 +197,6 @@
     "commodity": "mop",
     "supplier_iso": "IL",
     "chokepoints": [
-      "suez",
       "bab_el_mandeb"
     ],
     "indian_port": "kandla",

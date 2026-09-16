@@ -286,31 +286,104 @@ def build(db_path: Path | None = None) -> Path:
         )
         _executemany(conn, "INSERT INTO route_chokepoints VALUES (?,?)", route_chokes)
 
-        events_path = root / "data" / "raw" / "events.jsonl"
-        if events_path.exists():
+        raw_dir = root / "data" / "raw"
+        event_files = sorted(raw_dir.glob("events*.jsonl")) if raw_dir.exists() else []
+        if event_files:
             events, ents, comms = [], [], []
             seen: set[str] = set()
-            for line in events_path.read_text(encoding="utf-8").splitlines():
-                if not line.strip():
-                    continue
-                e = json.loads(line)
-                if e["event_id"] in seen:
-                    continue
-                seen.add(e["event_id"])
-                events.append(
-                    (e["event_id"], e["observed_at"], e["source_name"], e["url"], e.get("tone"))
-                )
-                ents.extend((e["event_id"], x) for x in e.get("entities") or [])
-                comms.extend(
-                    (e["event_id"], x)
-                    for x in e.get("commodities") or []
-                    if x in {"crude_oil", "lng", "urea", "dap", "mop"}
-                )
-            _executemany(conn, "INSERT INTO events VALUES (?,?,?,?,?)", events)
-            _executemany(conn, "INSERT INTO event_entities VALUES (?,?)", ents)
-            _executemany(conn, "INSERT INTO event_commodities VALUES (?,?)", comms)
+            for ef in event_files:
+                for line in ef.read_text(encoding="utf-8").splitlines():
+                    if not line.strip():
+                        continue
+                    try:
+                        e = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if e["event_id"] in seen:
+                        continue
+                    seen.add(e["event_id"])
+                    events.append(
+                        (e["event_id"], e["observed_at"], e["source_name"], e["url"], e.get("tone"))
+                    )
+                    ents.extend((e["event_id"], x) for x in e.get("entities") or [])
+                    comms.extend(
+                        (e["event_id"], x)
+                        for x in e.get("commodities") or []
+                        if x in {"crude_oil", "lng", "urea", "dap", "mop"}
+                    )
+            _executemany(conn, "INSERT OR IGNORE INTO events VALUES (?,?,?,?,?)", events)
+            _executemany(conn, "INSERT OR IGNORE INTO event_entities VALUES (?,?)", ents)
+            _executemany(conn, "INSERT OR IGNORE INTO event_commodities VALUES (?,?)", comms)
 
         conn.commit()
     finally:
         conn.close()
     return db_path
+
+
+def append_events(
+    events: list[dict] | Path | str,
+    db_path: Path | None = None,
+) -> int:
+    """Incrementally append events to flow.db without rebuilding the database.
+
+    Accepts either a list of event dictionaries or a path to a JSONL file.
+    Uses INSERT OR IGNORE on events, event_entities, and event_commodities
+    to safely skip duplicates while preserving historical events and all seed tables.
+
+    Returns:
+        int: Number of new events inserted into the events table.
+    """
+    root = repo_root()
+    db_path = db_path or (root / "data" / "flow.db")
+    if not db_path.exists():
+        build(db_path)
+
+    event_list: list[dict] = []
+    if isinstance(events, (str, Path)):
+        p = Path(events)
+        if p.exists():
+            for line in p.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    try:
+                        event_list.append(json.loads(line))
+                    except json.JSONDecodeError:
+                        continue
+    elif isinstance(events, list):
+        event_list = events
+
+    if not event_list:
+        return 0
+
+    conn = sqlite3.connect(db_path)
+    try:
+        conn.execute("PRAGMA foreign_keys = ON")
+        cur = conn.cursor()
+
+        event_rows, ent_rows, comm_rows = [], [], []
+        seen: set[str] = set()
+        for e in event_list:
+            eid = e.get("event_id")
+            if not eid or eid in seen:
+                continue
+            seen.add(eid)
+            event_rows.append((eid, e["observed_at"], e["source_name"], e["url"], e.get("tone")))
+            for ent in e.get("entities") or []:
+                ent_rows.append((eid, ent))
+            for comm in e.get("commodities") or []:
+                if comm in {"crude_oil", "lng", "urea", "dap", "mop"}:
+                    comm_rows.append((eid, comm))
+
+        cur.execute("SELECT COUNT(*) FROM events")
+        before_count = cur.fetchone()[0]
+
+        _executemany(conn, "INSERT OR IGNORE INTO events VALUES (?,?,?,?,?)", event_rows)
+        _executemany(conn, "INSERT OR IGNORE INTO event_entities VALUES (?,?)", ent_rows)
+        _executemany(conn, "INSERT OR IGNORE INTO event_commodities VALUES (?,?)", comm_rows)
+        conn.commit()
+
+        cur.execute("SELECT COUNT(*) FROM events")
+        after_count = cur.fetchone()[0]
+        return after_count - before_count
+    finally:
+        conn.close()

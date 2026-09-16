@@ -11,7 +11,9 @@ SEEDS = ROOT / "data" / "seeds"
 WITS_OIL = "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/270900"
 WITS_LNG = "https://wits.worldbank.org/trade/comtrade/en/country/IND/year/2024/tradeflow/Imports/partner/ALL/product/271111"
 PPAC_REF = "https://ppac.gov.in/infrastructure/installed-refinery-capacity"
-SANSAD = "https://sansad.in/getFile/annex/270/AS41_r2YfWE.pdf"
+FERT_REPORTS = "https://www.fert.gov.in/en/documents/reports"
+FERT_PLANTS = "https://www.fert.gov.in/en/department/our-organizations"
+IPA_URL = "https://www.ipa.org.in/"
 EIA = "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
 
 
@@ -25,34 +27,34 @@ def main() -> None:
     dump(
         SEEDS / "suppliers.json",
         [
-            {"iso": iso, "name": name}
-            for iso, name in [
-                ("IN", "India"),
-                ("RU", "Russia"),
-                ("IQ", "Iraq"),
-                ("SA", "Saudi Arabia"),
-                ("AE", "United Arab Emirates"),
-                ("US", "United States"),
-                ("NG", "Nigeria"),
-                ("AO", "Angola"),
-                ("KW", "Kuwait"),
-                ("VE", "Venezuela"),
-                ("CO", "Colombia"),
-                ("MX", "Mexico"),
-                ("QA", "Qatar"),
-                ("OM", "Oman"),
-                ("GQ", "Equatorial Guinea"),
-                ("CM", "Cameroon"),
-                ("MZ", "Mozambique"),
-                ("TT", "Trinidad and Tobago"),
-                ("AU", "Australia"),
-                ("MA", "Morocco"),
-                ("CN", "China"),
-                ("CA", "Canada"),
-                ("JO", "Jordan"),
-                ("IL", "Israel"),
-                ("TM", "Turkmenistan"),
-                ("XX", "Other"),
+            {"iso": iso, "name": name, "lat": lat, "lon": lon}
+            for iso, name, lat, lon in [
+                ("IN", "India", 20.5937, 78.9629),
+                ("RU", "Russia", 61.5240, 105.3188),
+                ("IQ", "Iraq", 33.2232, 43.6793),
+                ("SA", "Saudi Arabia", 23.8859, 45.0792),
+                ("AE", "United Arab Emirates", 23.4241, 53.8478),
+                ("US", "United States", 37.0902, -95.7129),
+                ("NG", "Nigeria", 9.0820, 8.6753),
+                ("AO", "Angola", -11.2027, 17.8739),
+                ("KW", "Kuwait", 29.3117, 47.4818),
+                ("VE", "Venezuela", 6.4238, -66.5897),
+                ("CO", "Colombia", 4.5709, -74.2973),
+                ("MX", "Mexico", 23.6345, -102.5528),
+                ("QA", "Qatar", 25.3548, 51.1839),
+                ("OM", "Oman", 21.4735, 55.9754),
+                ("GQ", "Equatorial Guinea", 1.6508, 10.2679),
+                ("CM", "Cameroon", 7.3697, 12.3547),
+                ("MZ", "Mozambique", -18.6657, 35.5296),
+                ("TT", "Trinidad and Tobago", 10.6918, -61.2225),
+                ("AU", "Australia", -25.2744, 133.7751),
+                ("MA", "Morocco", 31.7917, -7.0926),
+                ("CN", "China", 35.8617, 104.1954),
+                ("CA", "Canada", 56.1304, -106.3468),
+                ("JO", "Jordan", 30.5852, 36.2384),
+                ("IL", "Israel", 31.0461, 34.8516),
+                ("TM", "Turkmenistan", 38.9697, 59.5563),
+                ("XX", "Other", None, None),
             ]
         ],
     )
@@ -98,7 +100,7 @@ def main() -> None:
                 "lon": lon,
                 "commodities": comm,
                 "source": "IPA / World Port Index coordinates (approx port location)",
-                "source_url": "https://www.ipa.nic.in/",
+                "source_url": IPA_URL,
             }
             for i, n, c, coast, lat, lon, comm in ports
         ],
@@ -151,7 +153,7 @@ def main() -> None:
     )
 
     terminals = [
-        ("dahej", "Dahej LNG", "Petronet LNG", 21.71, 72.57, 17.5, "dahej"),
+        ("dahej", "Dahej LNG", "Petronet LNG", 21.71, 72.57, 22.5, "dahej"),
         ("hazira_lng", "Hazira LNG", "Shell", 21.12, 72.65, 5.0, "hazira"),
         ("dabhol_lng", "Dabhol LNG", "Konkan LNG / GAIL", 17.54, 73.16, 5.0, "dabhol"),
         ("kochi_lng", "Kochi LNG", "Petronet LNG", 9.97, 76.24, 5.0, "kochi"),
@@ -170,9 +172,9 @@ def main() -> None:
                 "lat": lat,
                 "lon": lon,
                 "capacity_mtpa": cap,
-                "year": 2025,
+                "year": 2026,
                 "port": port,
-                "source": "Operator nameplate; cross-check PPAC / GIIGNL 2025",
+                "source": "Operator nameplate; cross-check PPAC / GIIGNL 2026",
                 "source_url": "https://giignl.org/",
             }
             for i, n, op, lat, lon, cap, port in terminals
@@ -200,7 +202,7 @@ def main() -> None:
                 "lon": lon,
                 "nearest_port": port,
                 "source": "Company sites; DoF plant list",
-                "source_url": "https://www.fert.nic.in/",
+                "source_url": FERT_PLANTS,
             }
             for i, n, op, prod, lat, lon, port in plants
         ],
@@ -247,6 +249,7 @@ def main() -> None:
         ),
     )
 
+    # WITS/Comtrade HS 271111, calendar 2024, kg -> mmt
     dump(
         SEEDS / "lng" / "imports.json",
         imports(
@@ -277,7 +280,7 @@ def main() -> None:
             "urea",
             2024,
             "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
-            SANSAD,
+            FERT_REPORTS,
             [
                 ("OM", "Oman", 2.613, 0.4627),
                 ("RU", "Russia", 0.923, 0.1634),
@@ -291,7 +294,7 @@ def main() -> None:
             "dap",
             2024,
             "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
-            SANSAD,
+            FERT_REPORTS,
             [
                 ("SA", "Saudi Arabia", 1.905, 0.4170),
                 ("MA", "Morocco", 1.074, 0.2351),
@@ -303,7 +306,7 @@ def main() -> None:
             "mop",
             2024,
             "Rajya Sabha annex AS41, FY 2024-25, LMT converted to MMT",
-            SANSAD,
+            FERT_REPORTS,
             [
                 ("RU", "Russia", 1.800, 0.5083),
                 ("CA", "Canada", 0.883, 0.2494),
@@ -340,14 +343,14 @@ def main() -> None:
     gulf = ["hormuz"]
     cape = ["cape"]
     malacca = ["malacca"]
-    red = ["suez", "bab_el_mandeb"]
+    mandeb = ["bab_el_mandeb"]
 
     oil_routes = [
         route("oil-RU-sikka", "crude_oil", "RU", cape, "sikka", 92.009, "jamnagar_sez"),
         route("oil-IQ-sikka", "crude_oil", "IQ", gulf, "sikka", 50.091, "jamnagar_dta"),
         route("oil-SA-sikka", "crude_oil", "SA", gulf, "sikka", 31.723, "vadinar_ref"),
-        route("oil-AE-sikka", "crude_oil", "AE", gulf, "mundra", 21.251, "koyali"),
-        route("oil-NG-sikka", "crude_oil", "NG", cape, "mumbai", 6.396, "bpcl_mumbai"),
+        route("oil-AE-mundra", "crude_oil", "AE", gulf, "mundra", 21.251, "koyali"),
+        route("oil-NG-mumbai", "crude_oil", "NG", cape, "mumbai", 6.396, "bpcl_mumbai"),
         route("oil-US-sikka", "crude_oil", "US", cape, "sikka", 5.959, "jamnagar_sez"),
         route("oil-AO-sikka", "crude_oil", "AO", cape, "sikka", 5.782, "jamnagar_dta"),
         route("oil-KW-sikka", "crude_oil", "KW", gulf, "sikka", 5.252, "vadinar_ref"),
@@ -363,7 +366,7 @@ def main() -> None:
         route("lng-US-dahej", "lng", "US", cape, "dahej", 5.420, "dahej"),
         route("lng-AE-hazira", "lng", "AE", gulf, "hazira", 3.164, "hazira_lng"),
         route("lng-AO-dahej", "lng", "AO", cape, "dahej", 1.968, "dahej"),
-        route("lng-OM-dahej", "lng", "OM", gulf, "dahej", 1.459, "dahej"),
+        route("lng-OM-dahej", "lng", "OM", [], "dahej", 1.459, "dahej"),
         route("lng-NG-dahej", "lng", "NG", cape, "dahej", 1.424, "dahej"),
         route("lng-GQ-dahej", "lng", "GQ", cape, "dahej", 0.967, "dahej"),
         route("lng-CM-dahej", "lng", "CM", cape, "dahej", 0.795, "dahej"),
@@ -374,7 +377,7 @@ def main() -> None:
     dump(SEEDS / "lng" / "routes.json", lng_routes)
 
     fert_routes = [
-        route("urea-OM-kandla", "urea", "OM", gulf, "kandla", 2.613),
+        route("urea-OM-kandla", "urea", "OM", [], "kandla", 2.613),
         route("urea-RU-kandla", "urea", "RU", cape, "kandla", 0.923),
         route("urea-SA-kandla", "urea", "SA", gulf, "kandla", 0.538),
         route("urea-QA-kandla", "urea", "QA", gulf, "kandla", 0.370),
@@ -386,8 +389,8 @@ def main() -> None:
         route("dap-XX-kakinada", "dap", "XX", malacca, "kakinada", 0.743),
         route("mop-RU-kandla", "mop", "RU", cape, "kandla", 1.800),
         route("mop-CA-kandla", "mop", "CA", cape, "kandla", 0.883),
-        route("mop-JO-kandla", "mop", "JO", red, "kandla", 0.301),
-        route("mop-IL-kandla", "mop", "IL", red, "kandla", 0.280),
+        route("mop-JO-kandla", "mop", "JO", mandeb, "kandla", 0.301),
+        route("mop-IL-kandla", "mop", "IL", mandeb, "kandla", 0.280),
         route("mop-TM-kandla", "mop", "TM", gulf, "kandla", 0.277),
     ]
     dump(SEEDS / "fertilizer" / "routes.json", fert_routes)

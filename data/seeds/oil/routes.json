@@ -45,7 +45,7 @@
     "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
   },
   {
-    "id": "oil-AE-sikka",
+    "id": "oil-AE-mundra",
     "commodity": "crude_oil",
     "supplier_iso": "AE",
     "chokepoints": [
@@ -60,7 +60,7 @@
     "source_url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
   },
   {
-    "id": "oil-NG-sikka",
+    "id": "oil-NG-mumbai",
     "commodity": "crude_oil",
     "supplier_iso": "NG",
     "chokepoints": [

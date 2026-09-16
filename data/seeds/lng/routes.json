@@ -63,9 +63,7 @@
     "id": "lng-OM-dahej",
     "commodity": "lng",
     "supplier_iso": "OM",
-    "chokepoints": [
-      "hormuz"
-    ],
+    "chokepoints": [],
     "indian_port": "dahej",
     "indian_facility": "dahej",
     "volume": 1.459,

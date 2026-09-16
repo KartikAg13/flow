@@ -10,7 +10,7 @@
     "lon": 72.49,
     "nearest_port": "kandla",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   },
   {
     "id": "iffco_paradeep",
@@ -24,7 +24,7 @@
     "lon": 86.61,
     "nearest_port": "paradip",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   },
   {
     "id": "nfl_nangal",
@@ -37,7 +37,7 @@
     "lon": 76.38,
     "nearest_port": "mumbai",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   },
   {
     "id": "rcf_thal",
@@ -50,7 +50,7 @@
     "lon": 72.87,
     "nearest_port": "mumbai",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   },
   {
     "id": "rcf_trombay",
@@ -63,7 +63,7 @@
     "lon": 72.9,
     "nearest_port": "mumbai",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   },
   {
     "id": "chambal_kota",
@@ -76,7 +76,7 @@
     "lon": 75.83,
     "nearest_port": "kandla",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   },
   {
     "id": "kribhco_hazira",
@@ -89,6 +89,6 @@
     "lon": 72.65,
     "nearest_port": "hazira",
     "source": "Company sites; DoF plant list",
-    "source_url": "https://www.fert.nic.in/"
+    "source_url": "https://www.fert.gov.in/en/department/our-organizations"
   }
 ]
