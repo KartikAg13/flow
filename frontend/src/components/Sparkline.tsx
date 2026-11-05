@@ -1,31 +1,13 @@
-interface SparklineProps {
-  values: number[];
-  color: string;
-  width?: number;
-  height?: number;
-}
-
-export default function Sparkline({ values, color, width = 88, height = 26 }: SparklineProps) {
-  if (values.length === 0) return null;
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const range = max - min || 1;
-
-  const points = values
-    .map((v, i) => {
-      const x = (i / (values.length - 1)) * width;
-      const y = height - ((v - min) / range) * height;
-      return `${x.toFixed(1)},${y.toFixed(1)}`;
-    })
-    .join(" ");
-
-  const lastX = width;
-  const lastY = height - ((values[values.length - 1] - min) / range) * height;
+// Fixed 0-100 scale so a flat line really means a flat risk, not a zoomed-in wobble.
+export default function Sparkline({ values, width = 84, height = 24 }: { values: number[]; width?: number; height?: number }) {
+  if (values.length < 2) return <svg width={width} height={height} aria-hidden="true" />;
+  const xy = values.map((v, i) => [(i / (values.length - 1)) * width, height - 1 - (v / 100) * (height - 2)]);
+  const [lastX, lastY] = xy[xy.length - 1];
 
   return (
     <svg width={width} height={height} className="sparkline" aria-hidden="true">
-      <polyline points={points} fill="none" stroke={color} strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round" />
-      <circle cx={lastX} cy={lastY} r="2" fill={color} />
+      <polyline points={xy.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ")} />
+      <circle cx={lastX} cy={lastY} r="2" />
     </svg>
   );
 }

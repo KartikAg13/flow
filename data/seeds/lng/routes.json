@@ -3,6 +3,9 @@
     "id": "lng-QA-dahej",
     "commodity": "lng",
     "supplier_iso": "QA",
+    "origin": "Ras Laffan",
+    "origin_lat": 25.92,
+    "origin_lon": 51.61,
     "chokepoints": [
       "hormuz"
     ],
@@ -18,6 +21,9 @@
     "id": "lng-US-dahej",
     "commodity": "lng",
     "supplier_iso": "US",
+    "origin": "Sabine Pass",
+    "origin_lat": 29.73,
+    "origin_lon": -93.87,
     "chokepoints": [
       "cape"
     ],
@@ -33,6 +39,9 @@
     "id": "lng-AE-hazira",
     "commodity": "lng",
     "supplier_iso": "AE",
+    "origin": "Das Island",
+    "origin_lat": 25.15,
+    "origin_lon": 52.87,
     "chokepoints": [
       "hormuz"
     ],
@@ -48,6 +57,9 @@
     "id": "lng-AO-dahej",
     "commodity": "lng",
     "supplier_iso": "AO",
+    "origin": "Soyo",
+    "origin_lat": -6.13,
+    "origin_lon": 12.35,
     "chokepoints": [
       "cape"
     ],
@@ -63,6 +75,9 @@
     "id": "lng-OM-dahej",
     "commodity": "lng",
     "supplier_iso": "OM",
+    "origin": "Qalhat",
+    "origin_lat": 22.7,
+    "origin_lon": 59.37,
     "chokepoints": [],
     "indian_port": "dahej",
     "indian_facility": "dahej",
@@ -76,6 +91,9 @@
     "id": "lng-NG-dahej",
     "commodity": "lng",
     "supplier_iso": "NG",
+    "origin": "Bonny",
+    "origin_lat": 4.42,
+    "origin_lon": 7.15,
     "chokepoints": [
       "cape"
     ],
@@ -91,6 +109,9 @@
     "id": "lng-GQ-dahej",
     "commodity": "lng",
     "supplier_iso": "GQ",
+    "origin": "Punta Europa",
+    "origin_lat": 3.78,
+    "origin_lon": 8.71,
     "chokepoints": [
       "cape"
     ],
@@ -106,6 +127,9 @@
     "id": "lng-CM-dahej",
     "commodity": "lng",
     "supplier_iso": "CM",
+    "origin": "Kribi",
+    "origin_lat": 2.87,
+    "origin_lon": 9.83,
     "chokepoints": [
       "cape"
     ],
@@ -121,9 +145,10 @@
     "id": "lng-MZ-dhamra",
     "commodity": "lng",
     "supplier_iso": "MZ",
-    "chokepoints": [
-      "cape"
-    ],
+    "origin": "Coral South FLNG",
+    "origin_lat": -10.4,
+    "origin_lon": 40.6,
+    "chokepoints": [],
     "indian_port": "dhamra",
     "indian_facility": "dhamra_lng",
     "volume": 0.588,
@@ -136,6 +161,9 @@
     "id": "lng-TT-dahej",
     "commodity": "lng",
     "supplier_iso": "TT",
+    "origin": "Point Fortin",
+    "origin_lat": 10.18,
+    "origin_lon": -61.69,
     "chokepoints": [
       "cape"
     ],
@@ -151,6 +179,9 @@
     "id": "lng-XX-kochi",
     "commodity": "lng",
     "supplier_iso": "XX",
+    "origin": null,
+    "origin_lat": null,
+    "origin_lon": null,
     "chokepoints": [],
     "indian_port": "kochi",
     "indian_facility": "kochi_lng",

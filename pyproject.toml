@@ -8,10 +8,12 @@ license = { text = "MIT" }
 authors = [{ name = "Kartik Agrawal" }]
 dependencies = [
     "httpx>=0.27",
+    "langchain-groq>=0.3",
+    "langgraph>=0.4",
+    "mcp>=1.9",
     "networkx>=3.4",
     "pandas>=2.2",
     "pydantic>=2.9",
-    "pydantic-settings>=2.6",
     "python-dotenv>=1.0",
     "typer>=0.15",
 ]
@@ -23,15 +25,7 @@ flow = "flow.cli:app"
 dev = [
     "pytest>=8.3",
     "ruff>=0.8",
-]
-agents = [
-    "langchain>=0.3",
-    "langchain-groq>=0.2",
-    "langgraph>=0.2",
-    "mcp>=1.2",
-]
-intel = [
-    "chromadb>=0.5",
+    "searoute>=1.6",
 ]
 viz = [
     "ipykernel>=7.3.0",

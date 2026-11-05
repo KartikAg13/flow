@@ -1,17 +1,21 @@
-# Flow — frontend
+# Flow — dashboard
 
-A standalone instrument-panel UI for the chokepoint risk data described in the
-project's `data/seeds/` tables. **This build does not call the Python backend
-yet** — everything on screen comes from `src/data/staticData.ts`, a TypeScript
-copy of the shape of `chokepoints.json`, `ports.json`, and `suppliers.json`,
-plus placeholder news and risk scores.
+The dashboard for Flow's live chokepoint risk, import corridors, news and closure scenarios. All data comes from the Python API (`src/flow/api.py`); nothing on screen is mocked.
 
 ## Run it
 
+Production-style, one process:
+
 ```bash
-cd frontend
-npm install
-npm run dev
+cd frontend && npm install && npm run build
+cd .. && uv run flow serve        # http://127.0.0.1:8000
+```
+
+While editing the UI, run both:
+
+```bash
+uv run flow serve                 # API on :8000
+cd frontend && npm run dev        # http://localhost:5173, proxies /api to :8000
 ```
 
 `npm install` must finish without `ERESOLVE`. If npm blocks esbuild's install script (npm 12 does this by default), run this once, then `npm run dev` again:
@@ -21,71 +25,39 @@ npm install-scripts approve esbuild
 npm rebuild esbuild
 ```
 
-Open http://localhost:5173/ . Do not run this from the repo root; Vite lives in `frontend/`.
-
-Open the printed local URL. `npm run build` produces a static `dist/` you can
-host anywhere; `npm run preview` serves that build locally.
-
-The map uses OpenStreetMap tiles via CARTO's free dark basemap, fetched by
-the browser at runtime — you'll need normal internet access for the map
-imagery to appear (everything else works offline).
+The map uses Esri's light and dark gray canvas tiles, fetched by the browser at runtime, so it needs internet access for the map imagery. Everything else works offline.
 
 ## Layout
 
-```
-┌────────────────────────────────────────────────────────────┐
-│  FLOW                                          UTC clock    │
-├────────────────────────────────────────────────────────────┤
-│  live risk shower — one dial per chokepoint, ticks live     │
-├───────────────────────────────────────────┬─────────────────┤
-│                                            │  current news   │
-│               chokepoint map              │  (scrolling,     │
-│         (chokepoints, Indian ports,       │   filterable by  │
-│          route lines between them)        │   chokepoint)    │
-│                                            │                 │
-├───────────────────────────────────────────┴─────────────────┤
-│  info panel — selected chokepoint detail + fleet stats       │
-└────────────────────────────────────────────────────────────┘
-```
+- **Top bar:** freshness of the GDELT data, and the **Ask Copilot** button.
+- **Risk row:** one card per chokepoint. Each card shows the live 0–100 score, its band (Nominal, Watch, Elevated), the change since the previous GDELT slice, and a sparkline on a fixed 0–100 scale.
+- **Map:** chokepoints, Indian ports, refineries, terminals, plants and strategic reserves. Lanes run from each chokepoint to the ports its cargo reaches, coloured by risk, with line width showing tonnes per year.
+- **News:** GDELT articles about the selected chokepoint (or all), with tone and tags.
+- **Details:** India's import share through the selected chokepoint, and **Simulate closure** for 1, 3, 6 or 12 months.
+- **Copilot sheet:** the deterministic closure scenario, plus questions to the multi-agent Copilot (needs `GROQ_API_KEY`).
 
-Clicking a risk dial, a map marker, or a news item all set the same
-"selected chokepoint" state and stay in sync.
+Clicking a risk card, a map marker, a lane or a news tag selects that chokepoint everywhere.
 
-## File map
+## Files
 
 ```
 src/
-  data/staticData.ts     mock chokepoints, ports, suppliers, news — swap for API data here
-  hooks/useLiveChokepoints.ts   local jitter simulation standing in for a live feed
-  utils/risk.ts           risk-band thresholds, colors, time-ago formatting
-  components/
-    TopBar.tsx
-    RiskShower.tsx        top risk dials + sparklines
-    MapPanel.tsx           Leaflet map, markers, route lines
-    NewsPanel.tsx           news feed
-    InfoPanel.tsx           bottom detail panel
-    Sparkline.tsx
-  App.tsx                 layout + shared selection state
-  styles/
-    global.css             design tokens (color/type variables)
-    app.css                 layout and component styles
+  api.ts                     typed client for /api/* (shapes match src/flow/api.py)
+  hooks/usePoll.ts           polling with last-good-data, and the light/dark hook
+  utils/risk.ts              risk bands and number formatting
+  components/                TopBar, RiskShower, Sparkline, MapPanel, NewsPanel, InfoPanel, CopilotSheet
+  styles/global.css          tokens (Apple system colours, light + dark), base, accessibility
+  styles/app.css             layout and components
 ```
 
-## Wiring up the real backend later
+## Design notes
 
-Everything a real API needs to supply lives in one place:
+The design follows Apple's interface guidelines:
 
-- Replace the arrays in `src/data/staticData.ts` (`chokepoints`, `ports`,
-  `suppliers`, `newsFeed`) with fetch calls — the types (`Chokepoint`, `Port`,
-  `NewsItem`, etc.) already match the seed JSON shapes described in
-  `data/TABLES.md`, so an endpoint that serializes those SQLite tables
-  should drop in with minimal changes.
-- `risk`, `trend`, and `history` on `Chokepoint` are currently simulated in
-  `useLiveChokepoints.ts`. Swap that hook's `setInterval` jitter for a
-  polling or websocket call to the real `entity_risk` table/live score
-  endpoint once it exists.
-- `newsFeed` items map 1:1 to the `events` table — `chokepointId` and
-  `commodity` are meant to come from `event_entities` / `event_commodities`.
+- system font with size-specific tracking
+- light and dark system colours
+- a translucent top bar and Copilot sheet over solid content cards
+- press feedback on pointer-down
+- a sheet that leaves and returns along the same edge as its trigger, and becomes a bottom sheet on phones
 
-No component needs to change shape-wise if the API response matches these
-types; only the data-fetching layer does.
+It also respects `prefers-reduced-motion` (cross-fade instead of a slide), `prefers-reduced-transparency` (solid materials) and `prefers-contrast: more`.

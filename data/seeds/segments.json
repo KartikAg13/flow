@@ -1,0 +1,154 @@
+[
+  {
+    "fuel": "diesel",
+    "segment": "Trucks (HCV/LCV)",
+    "share": 0.554,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Private cars",
+    "share": 0.124,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Industry",
+    "share": 0.063,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Others",
+    "share": 0.063,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Buses",
+    "share": 0.059,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Agriculture (tractors, pumps)",
+    "share": 0.048,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Taxis",
+    "share": 0.029,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Railways",
+    "share": 0.021,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Power gensets",
+    "share": 0.016,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Three-wheelers",
+    "share": 0.012,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Aviation and shipping",
+    "share": 0.008,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "diesel",
+    "segment": "Mobile towers",
+    "share": 0.003,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 17, retail and direct",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Two-wheelers",
+    "share": 0.5891,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Private cars",
+    "share": 0.2796,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Private SUVs",
+    "share": 0.0861,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Taxis",
+    "share": 0.0191,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Taxi SUVs",
+    "share": 0.0138,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Three-wheelers (goods)",
+    "share": 0.0069,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  },
+  {
+    "fuel": "petrol",
+    "segment": "Three-wheelers (passenger)",
+    "share": 0.0055,
+    "year": 2021,
+    "source": "PPAC all-India study on sectoral demand for petrol and diesel (Oct 2020 - Sep 2021), Fig. 10, retail",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1666932000_ExecutiveSummarySectoralConsumptionStudy.pdf"
+  }
+]

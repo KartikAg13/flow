@@ -3,6 +3,9 @@
     "id": "oil-RU-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "RU",
+    "origin": "Primorsk",
+    "origin_lat": 60.35,
+    "origin_lon": 28.68,
     "chokepoints": [
       "cape"
     ],
@@ -18,6 +21,9 @@
     "id": "oil-IQ-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "IQ",
+    "origin": "Basrah Oil Terminal",
+    "origin_lat": 29.68,
+    "origin_lon": 48.82,
     "chokepoints": [
       "hormuz"
     ],
@@ -33,6 +39,9 @@
     "id": "oil-SA-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "SA",
+    "origin": "Ras Tanura",
+    "origin_lat": 26.64,
+    "origin_lon": 50.16,
     "chokepoints": [
       "hormuz"
     ],
@@ -48,6 +57,9 @@
     "id": "oil-AE-mundra",
     "commodity": "crude_oil",
     "supplier_iso": "AE",
+    "origin": "Jebel Dhanna",
+    "origin_lat": 24.19,
+    "origin_lon": 52.6,
     "chokepoints": [
       "hormuz"
     ],
@@ -63,6 +75,9 @@
     "id": "oil-NG-mumbai",
     "commodity": "crude_oil",
     "supplier_iso": "NG",
+    "origin": "Bonny",
+    "origin_lat": 4.42,
+    "origin_lon": 7.15,
     "chokepoints": [
       "cape"
     ],
@@ -78,6 +93,9 @@
     "id": "oil-US-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "US",
+    "origin": "Corpus Christi",
+    "origin_lat": 27.81,
+    "origin_lon": -97.39,
     "chokepoints": [
       "cape"
     ],
@@ -93,6 +111,9 @@
     "id": "oil-AO-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "AO",
+    "origin": "Luanda",
+    "origin_lat": -8.8,
+    "origin_lon": 13.2,
     "chokepoints": [
       "cape"
     ],
@@ -108,6 +129,9 @@
     "id": "oil-KW-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "KW",
+    "origin": "Mina al Ahmadi",
+    "origin_lat": 29.07,
+    "origin_lon": 48.16,
     "chokepoints": [
       "hormuz"
     ],
@@ -123,6 +147,9 @@
     "id": "oil-VE-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "VE",
+    "origin": "Jose",
+    "origin_lat": 10.1,
+    "origin_lon": -64.83,
     "chokepoints": [
       "cape"
     ],
@@ -138,6 +165,9 @@
     "id": "oil-CO-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "CO",
+    "origin": "Covenas",
+    "origin_lat": 9.41,
+    "origin_lon": -75.69,
     "chokepoints": [
       "cape"
     ],
@@ -153,6 +183,9 @@
     "id": "oil-MX-sikka",
     "commodity": "crude_oil",
     "supplier_iso": "MX",
+    "origin": "Dos Bocas",
+    "origin_lat": 18.43,
+    "origin_lon": -93.2,
     "chokepoints": [
       "cape"
     ],
@@ -168,6 +201,9 @@
     "id": "oil-XX-paradip",
     "commodity": "crude_oil",
     "supplier_iso": "XX",
+    "origin": null,
+    "origin_lat": null,
+    "origin_lon": null,
     "chokepoints": [
       "malacca"
     ],

@@ -4,6 +4,7 @@
     "name": "Sikka",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Gujarat",
     "lat": 22.43,
     "lon": 69.83,
     "commodities": [
@@ -17,6 +18,7 @@
     "name": "Vadinar",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Gujarat",
     "lat": 22.37,
     "lon": 69.72,
     "commodities": [
@@ -30,6 +32,7 @@
     "name": "Mundra",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Gujarat",
     "lat": 22.74,
     "lon": 69.71,
     "commodities": [
@@ -47,6 +50,7 @@
     "name": "Mumbai",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Maharashtra",
     "lat": 18.95,
     "lon": 72.85,
     "commodities": [
@@ -60,6 +64,7 @@
     "name": "New Mangalore",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Karnataka",
     "lat": 12.87,
     "lon": 74.84,
     "commodities": [
@@ -73,6 +78,7 @@
     "name": "Kochi",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Kerala",
     "lat": 9.97,
     "lon": 76.24,
     "commodities": [
@@ -87,6 +93,7 @@
     "name": "Kandla",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Gujarat",
     "lat": 23.03,
     "lon": 70.22,
     "commodities": [
@@ -102,6 +109,7 @@
     "name": "Dahej",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Gujarat",
     "lat": 21.71,
     "lon": 72.57,
     "commodities": [
@@ -115,6 +123,7 @@
     "name": "Hazira",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Gujarat",
     "lat": 21.12,
     "lon": 72.65,
     "commodities": [
@@ -128,6 +137,7 @@
     "name": "Dabhol",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Maharashtra",
     "lat": 17.54,
     "lon": 73.16,
     "commodities": [
@@ -141,6 +151,7 @@
     "name": "Jaigarh",
     "country_iso": "IN",
     "coast": "west",
+    "state": "Maharashtra",
     "lat": 17.3,
     "lon": 73.19,
     "commodities": [
@@ -154,6 +165,7 @@
     "name": "Paradip",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Odisha",
     "lat": 20.26,
     "lon": 86.67,
     "commodities": [
@@ -169,6 +181,7 @@
     "name": "Visakhapatnam",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Andhra Pradesh",
     "lat": 17.69,
     "lon": 83.3,
     "commodities": [
@@ -182,6 +195,7 @@
     "name": "Haldia",
     "country_iso": "IN",
     "coast": "east",
+    "state": "West Bengal",
     "lat": 22.04,
     "lon": 88.06,
     "commodities": [
@@ -195,6 +209,7 @@
     "name": "Chennai",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Tamil Nadu",
     "lat": 13.08,
     "lon": 80.29,
     "commodities": [
@@ -208,6 +223,7 @@
     "name": "Ennore",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Tamil Nadu",
     "lat": 13.26,
     "lon": 80.34,
     "commodities": [
@@ -221,6 +237,7 @@
     "name": "Dhamra",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Odisha",
     "lat": 20.82,
     "lon": 87.0,
     "commodities": [
@@ -234,6 +251,7 @@
     "name": "Kakinada",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Andhra Pradesh",
     "lat": 16.98,
     "lon": 82.28,
     "commodities": [
@@ -249,6 +267,7 @@
     "name": "Krishnapatnam",
     "country_iso": "IN",
     "coast": "east",
+    "state": "Andhra Pradesh",
     "lat": 14.25,
     "lon": 80.13,
     "commodities": [

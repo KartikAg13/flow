@@ -1,0 +1,122 @@
+[
+  {
+    "id": "fertilizer_gas_share",
+    "value": 0.31,
+    "unit": "fraction",
+    "year": 2024,
+    "source": "PPAC Industry Consumption Report Feb 2024: fertilizer 31% of natural gas consumption, Apr-Feb FY2023-24 (provisional)",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1711109718_Industry-Consumption-Report-February-2024.pdf"
+  },
+  {
+    "id": "urea_gcal_per_t",
+    "value": 6.2,
+    "unit": "gcal/t",
+    "year": 2024,
+    "source": "NUP-2015 target energy norm for the middle group of gas-based urea units (groups: 5.5 / 6.2 / 6.5 Gcal per t); Rajya Sabha answer, 30 Jul 2024",
+    "source_url": "https://rsdebate.nic.in/bitstream/123456789/749969/1/PQ_265_30072024_U827_p230_p230.pdf"
+  },
+  {
+    "id": "lng_gcal_per_t",
+    "value": 12.3,
+    "unit": "gcal/t",
+    "year": 2024,
+    "source": "1 Mt LNG = 1.23 Mtoe and 1 toe = 10 Gcal (Energy Intelligence conversion factors)",
+    "source_url": "https://www.energyintel.com/0000017b-a7ba-de4c-a17b-e7fac9fa0000"
+  },
+  {
+    "id": "cgd_gas_share",
+    "value": 0.19,
+    "unit": "fraction",
+    "year": 2024,
+    "source": "PPAC Industry Consumption Report Feb 2024: city gas 19% of natural gas consumption, Apr-Feb FY2023-24 (provisional)",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1711109718_Industry-Consumption-Report-February-2024.pdf"
+  },
+  {
+    "id": "power_gas_share",
+    "value": 0.14,
+    "unit": "fraction",
+    "year": 2024,
+    "source": "PPAC Industry Consumption Report Feb 2024: power 14% of natural gas consumption, Apr-Feb FY2023-24 (provisional)",
+    "source_url": "https://ppac.gov.in/uploads/rep_studies/1711109718_Industry-Consumption-Report-February-2024.pdf"
+  },
+  {
+    "id": "diesel_yield",
+    "value": 0.443,
+    "unit": "fraction of crude processed",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Tables 4.1 and 4.4: 115.9 MMT HSD from 261.5 MMT crude processed, FY2023-24 (P)",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "petrol_yield",
+    "value": 0.172,
+    "unit": "fraction of crude processed",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Tables 4.1 and 4.4: 45.1 MMT MS from 261.5 MMT crude processed, FY2023-24 (P)",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "diesel_exports_mmt",
+    "value": 28.2,
+    "unit": "mmt/yr",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 4.11: diesel exports FY2023-24 (P)",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "petrol_exports_mmt",
+    "value": 13.5,
+    "unit": "mmt/yr",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 4.11: petrol exports FY2023-24 (P)",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "hormuz_bypass_spare_mbpd",
+    "value": 2.6,
+    "unit": "mb/d",
+    "year": 2025,
+    "source": "EIA: about 2.6 million b/d of Saudi and UAE pipeline capacity could bypass the Strait of Hormuz in a supply disruption",
+    "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=65504"
+  },
+  {
+    "id": "hormuz_crude_mbpd",
+    "value": 14.5,
+    "unit": "mb/d",
+    "year": 2024,
+    "source": "EIA: Saudi crude and condensate exports, 5.5 million b/d, were 38% of Hormuz crude flows in 2024 (5.5 / 0.38)",
+    "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=65504"
+  },
+  {
+    "id": "crude_bbl_per_t",
+    "value": 7.33,
+    "unit": "bbl/t",
+    "year": 2024,
+    "source": "Energy Institute Statistical Review of World Energy, approximate conversion factors: 1 tonne of crude oil = 7.33 barrels",
+    "source_url": "https://www.energyinst.org/statistical-review"
+  },
+  {
+    "id": "urea_consumption_mmt",
+    "value": 38.792,
+    "unit": "mmt/yr",
+    "year": 2025,
+    "source": "Rajya Sabha Unstarred Q.3550 (24.03.2026) annexure via PIB: 387.92 LMT UREA DBT sales in FY2024-25",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244621"
+  },
+  {
+    "id": "dap_consumption_mmt",
+    "value": 9.629,
+    "unit": "mmt/yr",
+    "year": 2025,
+    "source": "Rajya Sabha Unstarred Q.3550 (24.03.2026) annexure via PIB: 96.29 LMT DAP DBT sales in FY2024-25",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244621"
+  },
+  {
+    "id": "mop_consumption_mmt",
+    "value": 2.202,
+    "unit": "mmt/yr",
+    "year": 2025,
+    "source": "Rajya Sabha Unstarred Q.3550 (24.03.2026) annexure via PIB: 22.02 LMT MOP DBT sales in FY2024-25",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244621"
+  }
+]

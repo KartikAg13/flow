@@ -1,31 +1,37 @@
-import { useEffect, useState } from "react";
+import type { RefObject } from "react";
 
-export default function TopBar() {
-  const [clock, setClock] = useState(new Date());
+interface TopBarProps {
+  asOf: string | null;
+  events: number;
+  offline?: string;
+  askOpen: boolean;
+  askRef: RefObject<HTMLButtonElement>;
+  onAsk: () => void;
+}
 
-  useEffect(() => {
-    const id = setInterval(() => setClock(new Date()), 1000);
-    return () => clearInterval(id);
-  }, []);
-
-  const utc = clock.toISOString().slice(11, 19);
+export default function TopBar({ asOf, events, offline, askOpen, askRef, onAsk }: TopBarProps) {
+  const stamp = asOf ? new Date(asOf).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }) : "no news yet";
 
   return (
     <header className="topbar">
       <div className="topbar__brand">
-        <span className="topbar__mark">FLOW</span>
-        <span className="topbar__tagline">critical-import chokepoint instrument</span>
+        <span className="topbar__mark">Flow</span>
+        <span className="topbar__tagline">India's critical imports · crude, LNG, fertilizers</span>
       </div>
-
       <div className="topbar__meta">
-        <div className="topbar__status" title="This build renders seed data locally; no live backend is connected yet.">
-          <span className="dot dot--brass" />
-          local data · backend not connected
-        </div>
-        <div className="topbar__clock">
-          <span className="topbar__clock-label">UTC</span>
-          <span className="topbar__clock-value">{utc}</span>
-        </div>
+        <span className={`status${offline ? " status--warn" : ""}`} role="status">
+          <span className="status__dot" aria-hidden="true" />
+          {offline ? "Offline · showing last data" : `GDELT ${stamp} · ${events.toLocaleString()} articles`}
+        </span>
+        <button
+          ref={askRef}
+          className="button button--tint"
+          aria-expanded={askOpen}
+          aria-controls="copilot"
+          onClick={onAsk}
+        >
+          Ask Copilot
+        </button>
       </div>
     </header>
   );

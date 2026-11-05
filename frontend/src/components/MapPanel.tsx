@@ -1,125 +1,152 @@
-import { MapContainer, TileLayer, Marker, Polyline, Popup, Tooltip } from "react-leaflet";
+import { CircleMarker, MapContainer, Marker, Polyline, TileLayer, Tooltip } from "react-leaflet";
 import L from "leaflet";
-import type { Chokepoint, Port } from "../data/staticData";
-import { riskBand, riskColor } from "../utils/risk";
+import { commodityLabels, type Dashboard } from "../api";
+import { useDarkMode } from "../hooks/usePoll";
+import { mmt, riskBand } from "../utils/risk";
 
 interface MapPanelProps {
-  chokepoints: Chokepoint[];
-  ports: Port[];
+  dashboard: Dashboard;
   selectedId: string;
+  marked: Set<string>; // "kind:id" places the Copilot named, drawn red for a while
   onSelect: (id: string) => void;
 }
 
-function chokepointIcon(color: string, active: boolean) {
+const FACILITY_LABEL = {
+  refinery: "Refinery",
+  lng_terminal: "LNG terminal",
+  fertilizer_plant: "Fertilizer plant",
+  spr: "Strategic petroleum reserve",
+};
+
+const PIPE_UNIT = { mmtpa: "MMT a year", mmscmd: "million m³ a day", mbpd: "million barrels a day" };
+
+// Every tracked chokepoint, Cape of Good Hope to Malacca, plus India's coasts.
+const BOUNDS: L.LatLngBoundsExpression = [
+  [-36, 14],
+  [33, 104],
+];
+
+function diamond(band: string, active: boolean, marked: boolean) {
   const size = active ? 22 : 16;
   return L.divIcon({
-    className: "chokepoint-marker-wrap",
-    html: `<span class="chokepoint-marker${active ? " chokepoint-marker--active" : ""}" style="--c:${color}"></span>`,
+    className: "cp-marker-wrap",
+    html: `<span class="cp-marker cp-marker--${band}${active ? " is-active" : ""}${marked ? " is-marked" : ""}"></span>`,
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
   });
 }
 
-const portIcon = L.divIcon({
-  className: "port-marker-wrap",
-  html: `<span class="port-marker"></span>`,
-  iconSize: [7, 7],
-  iconAnchor: [3.5, 3.5],
-});
-
-export default function MapPanel({ chokepoints, ports, selectedId, onSelect }: MapPanelProps) {
-  const byId = Object.fromEntries(chokepoints.map((c) => [c.id, c]));
+export default function MapPanel({ dashboard, selectedId, marked, onSelect }: MapPanelProps) {
+  const dark = useDarkMode();
+  const cps = Object.fromEntries(dashboard.chokepoints.map((c) => [c.id, c]));
+  const ports = Object.fromEntries(dashboard.ports.map((p) => [p.id, p]));
+  const tiles = dark ? "World_Dark_Gray_Base" : "World_Light_Gray_Base";
 
   return (
-    <section className="map-panel">
-      <div className="panel-header">
-        <h2>Chokepoint map</h2>
-        <span className="panel-header__hint">India-bound crude, LNG &amp; fertilizer corridors</span>
-      </div>
+    <section className="panel map-panel" aria-label="Map of corridors to India">
+      <header className="panel__header">
+        <h2>Corridors to India</h2>
+        <span className="panel__hint">Line width shows tonnes per year</span>
+      </header>
       <div className="map-panel__canvas">
-        <MapContainer
-          center={[15, 62]}
-          zoom={3}
-          minZoom={2}
-          maxZoom={7}
-          scrollWheelZoom={true}
-          worldCopyJump
-          style={{ height: "100%", width: "100%", background: "var(--ink-900)" }}
-        >
+        <MapContainer bounds={BOUNDS} minZoom={2} maxZoom={7} worldCopyJump>
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png"
+            key={tiles}
+            attribution="Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ"
+            url={`https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${tiles}/MapServer/tile/{z}/{y}/{x}`}
           />
 
-          {ports.map((port) =>
-            port.routesVia.map((cpId) => {
-              const cp = byId[cpId];
-              if (!cp) return null;
-              const band = riskBand(cp.risk);
-              return (
-                <Polyline
-                  key={`${port.id}-${cpId}`}
-                  positions={[
-                    [port.lat, port.lon],
-                    [cp.lat, cp.lon],
-                  ]}
-                  pathOptions={{
-                    color: riskColor[band],
-                    weight: cpId === selectedId ? 1.4 : 0.6,
-                    opacity: cpId === selectedId ? 0.55 : 0.16,
-                    dashArray: "1 5",
-                  }}
-                />
-              );
-            })
-          )}
+          {dashboard.lanes.map((lane) => {
+            const cp = cps[lane.chokepoint];
+            const port = ports[lane.port];
+            const active = lane.chokepoint === selectedId;
+            // Leaflet reads className only when a path is created (react-leaflet's pathOptions
+            // go through setStyle, which ignores it), so it is a creation prop and part of the key.
+            const hit = marked.has(`chokepoint:${lane.chokepoint}`) ? " is-marked" : "";
+            const cls = `lane lane--${riskBand(cp.risk)}${active ? " is-active" : ""}${hit}`;
+            return (
+              <Polyline
+                key={`${lane.chokepoint}-${lane.port}-${cls}`}
+                className={cls}
+                positions={[
+                  [cp.lat, cp.lon],
+                  [port.lat, port.lon],
+                ]}
+                pathOptions={{ weight: 1 + Math.sqrt(lane.mmt) / 1.6 }}
+                eventHandlers={{ click: () => onSelect(cp.id) }}
+              >
+                <Tooltip sticky className="flow-tooltip">
+                  {cp.name} → {port.name}: {mmt(lane.mmt)} MMT a year of{" "}
+                  {lane.commodities.map((c) => commodityLabels[c]).join(", ")}
+                </Tooltip>
+              </Polyline>
+            );
+          })}
 
-          {ports.map((port) => (
-            <Marker key={port.id} position={[port.lat, port.lon]} icon={portIcon}>
-              <Tooltip direction="top" offset={[0, -4]} className="flow-tooltip">
-                {port.name}
+          {dashboard.pipelines.map((p) => {
+            const cls = `pipeline pipeline--${p.fluid}${p.scope === "bypass" ? " pipeline--bypass" : ""}`;
+            return (
+              <Polyline key={`${p.id}-${cls}`} className={cls} positions={p.points} pathOptions={{ weight: 2 }}>
+                <Tooltip sticky className="flow-tooltip">
+                  {p.name} · {p.operator} · {p.capacity} {PIPE_UNIT[p.capacity_unit]}
+                  {p.status !== "operational" ? ` · ${p.status}` : ""}
+                </Tooltip>
+              </Polyline>
+            );
+          })}
+
+          {dashboard.facilities.map((f) => {
+            const hit = marked.has(`${f.kind}:${f.id}`);
+            const cls = `facility facility--${f.kind}${hit ? " is-marked" : ""}`;
+            return (
+              <CircleMarker key={`${f.kind}-${f.id}-${cls}`} className={cls} center={[f.lat, f.lon]} radius={hit ? 5 : f.kind === "spr" ? 4 : 2.5}>
+                <Tooltip className="flow-tooltip">
+                  {f.name} · {FACILITY_LABEL[f.kind]}
+                </Tooltip>
+              </CircleMarker>
+            );
+          })}
+
+          {dashboard.ports.map((p) => {
+            const hit = marked.has(`port:${p.id}`);
+            const cls = `port${hit ? " is-marked" : ""}`;
+            return (
+              <CircleMarker key={`${p.id}-${cls}`} className={cls} center={[p.lat, p.lon]} radius={hit ? 6 : 3.5}>
+                <Tooltip className="flow-tooltip">
+                  {p.name} port
+                  {Object.entries(p.exposure).map(([c, v]) => ` · ${commodityLabels[c as keyof typeof commodityLabels]} ${mmt(v.mmt)} MMT`)}
+                </Tooltip>
+              </CircleMarker>
+            );
+          })}
+
+          {dashboard.chokepoints.map((cp) => (
+            <Marker
+              key={cp.id}
+              position={[cp.lat, cp.lon]}
+              icon={diamond(riskBand(cp.risk), cp.id === selectedId, marked.has(`chokepoint:${cp.id}`))}
+              title={cp.name}
+              eventHandlers={{ click: () => onSelect(cp.id) }}
+            >
+              <Tooltip direction="top" offset={[0, -8]} className="flow-tooltip">
+                {cp.name} · risk {cp.risk}
               </Tooltip>
             </Marker>
           ))}
-
-          {chokepoints.map((cp) => {
-            const band = riskBand(cp.risk);
-            const color = riskColor[band];
-            const active = cp.id === selectedId;
-            return (
-              <Marker
-                key={cp.id}
-                position={[cp.lat, cp.lon]}
-                icon={chokepointIcon(color, active)}
-                eventHandlers={{ click: () => onSelect(cp.id) }}
-              >
-                <Popup className="flow-popup">
-                  <strong>{cp.name}</strong>
-                  <br />
-                  {cp.transitVolume} {cp.transitUnit} transit · risk {cp.risk}
-                </Popup>
-              </Marker>
-            );
-          })}
         </MapContainer>
       </div>
-      <div className="map-panel__legend">
-        <span>
-          <i className="legend-swatch legend-swatch--diamond" /> chokepoint
+      <footer className="legend">
+        <span><i className="swatch swatch--diamond" /> Chokepoint</span>
+        <span><i className="swatch swatch--port" /> Indian port</span>
+        <span><i className="swatch swatch--facility" /> Refinery, terminal or plant</span>
+        <span><i className="swatch swatch--spr" /> Strategic reserve</span>
+        <span><i className="swatch swatch--pipe-crude" /> Oil pipeline</span>
+        <span><i className="swatch swatch--pipe-gas" /> Gas pipeline</span>
+        <span className="legend__bands">
+          <i className="swatch swatch--high" /> Elevated <i className="swatch swatch--medium" /> Watch{" "}
+          <i className="swatch swatch--low" /> Nominal
         </span>
-        <span>
-          <i className="legend-swatch legend-swatch--dot" /> Indian port
-        </span>
-        <span>
-          <i className="legend-swatch legend-swatch--high" /> elevated
-        </span>
-        <span>
-          <i className="legend-swatch legend-swatch--medium" /> watch
-        </span>
-        <span>
-          <i className="legend-swatch legend-swatch--low" /> nominal
-        </span>
-      </div>
+      </footer>
     </section>
   );
 }

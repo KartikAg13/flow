@@ -29,6 +29,12 @@ Loaders: `src/flow/data/`. Types: `src/flow/models/`. Graph: `src/flow/graph/` r
 | `refineries` | `data/seeds/oil/refineries.json` | `refineries` | one Indian refinery | JSON yes |
 | `lng_terminals` | `data/seeds/lng/terminals.json` | `lng_terminals` | one Indian LNG terminal | JSON yes |
 | `fertilizer_plants` | `data/seeds/fertilizer/plants.json` | `fertilizer_plants` | one Indian plant | JSON yes |
+| `spr_sites` | `data/seeds/oil/spr.json` | `spr_sites` | one strategic petroleum reserve | JSON yes |
+| `factors` | `data/seeds/factors.json` | `factors` | one cited constant for the cascade | JSON yes |
+| `state_stats` | `data/seeds/states.json` | `state_stats` | one published number for one state | JSON yes |
+| `fuel_segments` | `data/seeds/segments.json` | `fuel_segments` | one user segment's share of diesel or petrol | JSON yes |
+| `pipelines` | `data/seeds/pipelines.json` | `pipelines` | one oil or gas pipeline (domestic, or a chokepoint bypass abroad) | JSON yes |
+| `sea_paths` | `data/seeds/sea_paths.json` | `sea_paths` | one way by sea for a route or bypass outlet | JSON yes |
 | `imports` | `data/seeds/{oil,lng,fertilizer}/imports.json` | `imports` | one supplier × commodity × year | JSON yes |
 | `routes` | `data/seeds/{oil,lng,fertilizer}/routes.json` | `routes` | one cargo path to India | JSON yes |
 | `events` | `data/raw/events.jsonl` | `events` | one filtered GDELT article | no |
@@ -39,7 +45,6 @@ JSON arrays become extra SQLite tables (do not stuff a comma-separated string in
 | JSON field | SQLite link table |
 | --- | --- |
 | `ports.commodities[]` | `port_commodities(port_id, commodity_id)` |
-| `refineries.grades[]` | `refinery_grades(refinery_id, grade)` |
 | `fertilizer_plants.products[]` | `plant_products(plant_id, commodity_id)` |
 | `routes.chokepoints[]` | `route_chokepoints(route_id, chokepoint_id)` |
 | `events.entities[]` | `event_entities(event_id, entity_id)` |
@@ -251,7 +256,68 @@ Dedup on `event_id`. Fetch code belongs in `src/flow/data/` / `src/flow/intel/`,
 
 ## entity_risk (derived)
 
-Do not type this. Code scores `events` onto `suppliers` / `chokepoints` / `ports` and stores `live_risk` plus `as_of` on the graph node. Seed volumes do not change.
+Do not type this. `flow.intel` scores `events` onto the five chokepoints (0-100) and `uv run flow risk` (also run after every `data build`, `data gdelt` and `data ingest`) replaces the rows with `live_risk` plus `as_of`. Seed volumes do not change.
+
+---
+
+## spr_sites
+
+India's strategic petroleum reserves (ISPRL Phase I). The cascade simulation uses the total to say how many days of lost crude they cover.
+
+| Column | Type | Required |
+| --- | --- | --- |
+| `id` | slug | yes (`spr_vizag`) |
+| `name` | string | yes |
+| `lat`, `lon` | float | yes (approximate site) |
+| `capacity_mmt` | float | yes |
+| `year`, `source`, `source_url` | | yes |
+
+---
+
+## factors
+
+Cited constants, one per row, so the simulation has no magic numbers in code.
+
+| `id` | Meaning |
+| --- | --- |
+| `fertilizer_gas_share` | fertilizer sector's share of India's natural gas use (PPAC) |
+| `urea_gcal_per_t` | gas energy per tonne of urea (NUP-2015 energy norm) |
+| `lng_gcal_per_t` | energy in a tonne of LNG |
+| `cgd_gas_share`, `power_gas_share` | city gas and power shares of natural gas use (PPAC) |
+| `diesel_yield`, `petrol_yield` | HSD and MS made per tonne of crude processed (PPAC) |
+| `diesel_exports_mmt`, `petrol_exports_mmt` | yearly exports, cut first in a shortage (PPAC) |
+| `urea_consumption_mmt`, `dap_consumption_mmt`, `mop_consumption_mmt` | national yearly sales (DoF via PIB) |
+
+Columns: `id`, `value`, `unit`, `year`, `source`, `source_url`. Both files are written by `scripts/write_seeds.py`.
+
+---
+
+## state_stats
+
+Published per-state numbers that `sim.impact` uses to say which states and people a closure reaches. Primary key (`state`, `metric`). Every site table (ports, refineries, terminals, plants, SPR) also has a `state` column.
+
+| `metric` | Unit | Source |
+| --- | --- | --- |
+| `diesel`, `petrol` | tmt (thousand tonnes) a year | PPAC Ready Reckoner, FY2023-24 sales |
+| `urea_sales`, `dap_sales`, `mop_sales` | lmt | Lok Sabha Q.94 (Jul 2026), Kharif 2026 sales; used only as state shares |
+| `urea_production` | lmt | same answer, 2024-25 output |
+| `farm_holdings` | count | Agriculture Census 2015-16 |
+
+Columns: `state`, `metric`, `value`, `unit`, `year`, `source`, `source_url`.
+
+## pipelines
+
+Domestic lines (PPAC Ready Reckoner Tables 5.1, 5.2) list the Indian sites they link in `sites`, in flow order (`port:vadinar`, `refinery:mathura`, ...); `build()` rejects unknown sites. Bypass lines abroad (EIA: Saudi East-West, UAE ADCOP, SUMED) have `supplier_iso`, `bypasses` (chokepoints avoided) and `start_*`/`end_*` coordinates. Capacity is `mmtpa`, `mmscmd` or `mbpd`.
+
+## sea_paths
+
+Precomputed by `scripts/write_seeds.py` with searoute (Eurostat SeaRoute network): for each route (from its `origin` export terminal) and each bypass outlet (`leg` = `east_west>sikka`), every distinct way by sea with the chokepoints it `passes` and its length in `nm`. The script fails if a route's seeded `chokepoints` is not one of its real paths. `sim.reroute` picks the shortest path that avoids the closed chokepoints.
+
+Routes also carry `origin`, `origin_lat`, `origin_lon` (export terminal; empty for "Other" suppliers).
+
+## fuel_segments
+
+Share of diesel or petrol by user segment (trucks, buses, private cars, two-wheelers, tractors and pumps, ...), from PPAC's 2020-21 sectoral demand study. Primary key (`fuel`, `segment`); shares per fuel sum to 1.
 
 ---
 
@@ -292,7 +358,7 @@ rows = conn.execute(
 ).fetchall()
 ```
 
-The command that fills `data/flow.db` will live in `src/flow/data/` (something like `uv run flow data build`). Until that exists, do not create the `.db` by hand.
+`uv run flow data build` fills `data/flow.db` (code in `src/flow/data/build.py`, which also holds the real schema). Every seed row is validated by the Pydantic models in `src/flow/models/` first. Do not create the `.db` by hand.
 
 ---
 

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "spr_vizag",
+    "name": "ISPRL Visakhapatnam",
+    "lat": 17.69,
+    "lon": 83.26,
+    "state": "Andhra Pradesh",
+    "capacity_mmt": 1.33,
+    "year": 2025,
+    "source": "PIB: ISPRL Phase-I SPR, 5.33 MMT at Visakhapatnam, Mangaluru, Padur",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2113233"
+  },
+  {
+    "id": "spr_mangaluru",
+    "name": "ISPRL Mangaluru",
+    "lat": 12.97,
+    "lon": 74.88,
+    "state": "Karnataka",
+    "capacity_mmt": 1.5,
+    "year": 2025,
+    "source": "PIB: ISPRL Phase-I SPR, 5.33 MMT at Visakhapatnam, Mangaluru, Padur",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2113233"
+  },
+  {
+    "id": "spr_padur",
+    "name": "ISPRL Padur",
+    "lat": 13.21,
+    "lon": 74.75,
+    "state": "Karnataka",
+    "capacity_mmt": 2.5,
+    "year": 2025,
+    "source": "PIB: ISPRL Phase-I SPR, 5.33 MMT at Visakhapatnam, Mangaluru, Padur",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2113233"
+  }
+]

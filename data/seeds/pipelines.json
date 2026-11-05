@@ -1,0 +1,302 @@
+[
+  {
+    "id": "smpl",
+    "name": "Salaya-Mathura pipeline",
+    "fluid": "crude",
+    "scope": "domestic",
+    "operator": "IOCL",
+    "sites": [
+      "port:vadinar",
+      "refinery:koyali",
+      "refinery:mathura",
+      "refinery:panipat"
+    ],
+    "capacity": 25.0,
+    "capacity_unit": "mmtpa",
+    "length_km": 2646,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.2: crude oil pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "phbpl",
+    "name": "Paradip-Haldia-Barauni pipeline",
+    "fluid": "crude",
+    "scope": "domestic",
+    "operator": "IOCL",
+    "sites": [
+      "port:paradip",
+      "refinery:haldia_ref",
+      "refinery:barauni"
+    ],
+    "capacity": 20.4,
+    "capacity_unit": "mmtpa",
+    "length_km": 1873,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.2: crude oil pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "mundra_panipat",
+    "name": "Mundra-Panipat pipeline",
+    "fluid": "crude",
+    "scope": "domestic",
+    "operator": "IOCL",
+    "sites": [
+      "port:mundra",
+      "refinery:panipat"
+    ],
+    "capacity": 8.4,
+    "capacity_unit": "mmtpa",
+    "length_km": 1194,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.2: crude oil pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "mundra_bathinda",
+    "name": "Mundra-Bathinda pipeline",
+    "fluid": "crude",
+    "scope": "domestic",
+    "operator": "HMPL",
+    "sites": [
+      "port:mundra",
+      "refinery:bathinda"
+    ],
+    "capacity": 11.3,
+    "capacity_unit": "mmtpa",
+    "length_km": 1017,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.2: crude oil pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "vadinar_bina",
+    "name": "Vadinar-Bina pipeline",
+    "fluid": "crude",
+    "scope": "domestic",
+    "operator": "BPCL",
+    "sites": [
+      "port:vadinar",
+      "refinery:bina"
+    ],
+    "capacity": 7.8,
+    "capacity_unit": "mmtpa",
+    "length_km": 937,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.2: crude oil pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "ddbb",
+    "name": "Duliajan-Digboi-Bongaigaon-Barauni pipeline (Assam crude)",
+    "fluid": "crude",
+    "scope": "domestic",
+    "operator": "OIL",
+    "sites": [
+      "refinery:digboi",
+      "refinery:guwahati",
+      "refinery:bongaigaon",
+      "refinery:barauni"
+    ],
+    "capacity": 9.0,
+    "capacity_unit": "mmtpa",
+    "length_km": 1195,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.2: crude oil pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "hvj",
+    "name": "Hazira-Vijaipur-Jagdishpur / Dahej-Vijaipur (HVJ-GREP-DVPL), with the Dadri-Bawana-Nangal spur",
+    "fluid": "gas",
+    "scope": "domestic",
+    "operator": "GAIL",
+    "sites": [
+      "lng_terminal:dahej",
+      "lng_terminal:hazira_lng",
+      "fertilizer_plant:kribhco_hazira",
+      "fertilizer_plant:chambal_kota",
+      "fertilizer_plant:nfl_nangal"
+    ],
+    "capacity": 107.0,
+    "capacity_unit": "mmscmd",
+    "length_km": 6725,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.1: natural gas pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "dupl",
+    "name": "Dahej-Uran-Panvel-Dabhol pipeline",
+    "fluid": "gas",
+    "scope": "domestic",
+    "operator": "GAIL",
+    "sites": [
+      "lng_terminal:dahej",
+      "fertilizer_plant:rcf_trombay",
+      "fertilizer_plant:rcf_thal",
+      "lng_terminal:dabhol_lng"
+    ],
+    "capacity": 19.9,
+    "capacity_unit": "mmscmd",
+    "length_km": 943,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.1: natural gas pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "gujarat_grid",
+    "name": "Gujarat high-pressure gas grid",
+    "fluid": "gas",
+    "scope": "domestic",
+    "operator": "GSPL",
+    "sites": [
+      "lng_terminal:mundra_lng",
+      "fertilizer_plant:iffco_kalol",
+      "lng_terminal:dahej",
+      "lng_terminal:hazira_lng"
+    ],
+    "capacity": 31.0,
+    "capacity_unit": "mmscmd",
+    "length_km": 2657,
+    "status": "operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.1: natural gas pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "kkbmpl",
+    "name": "Kochi-Koottanad-Bengaluru-Mangalore pipeline",
+    "fluid": "gas",
+    "scope": "domestic",
+    "operator": "GAIL",
+    "sites": [
+      "lng_terminal:kochi_lng",
+      "refinery:mangalore_ref"
+    ],
+    "capacity": 12.0,
+    "capacity_unit": "mmscmd",
+    "length_km": 642,
+    "status": "part operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.1: natural gas pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "jhbdpl",
+    "name": "Jagdishpur-Haldia-Bokaro-Dhamra-Paradip-Barauni-Guwahati (Urja Ganga)",
+    "fluid": "gas",
+    "scope": "domestic",
+    "operator": "GAIL",
+    "sites": [
+      "lng_terminal:dhamra_lng",
+      "fertilizer_plant:iffco_paradeep",
+      "refinery:haldia_ref",
+      "refinery:barauni",
+      "refinery:guwahati"
+    ],
+    "capacity": 7.44,
+    "capacity_unit": "mmscmd",
+    "length_km": 2383,
+    "status": "part operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.1: natural gas pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "etbpnmt",
+    "name": "Ennore-Thiruvallur-Bengaluru-Puducherry-Nagapattinam-Madurai-Tuticorin",
+    "fluid": "gas",
+    "scope": "domestic",
+    "operator": "IOCL",
+    "sites": [
+      "lng_terminal:ennore_lng",
+      "refinery:manali"
+    ],
+    "capacity": 84.67,
+    "capacity_unit": "mmscmd",
+    "length_km": 1421,
+    "status": "part operational",
+    "year": 2024,
+    "source": "PPAC Ready Reckoner H1 FY2024-25, Table 5.1: natural gas pipelines, as on 01.10.2024",
+    "source_url": "https://forum.valuepickr.com/uploads/short-url/dxhgtaVB1GYtnMa6VOaP7cew7jr.pdf"
+  },
+  {
+    "id": "east_west",
+    "name": "East-West crude pipeline (Abqaiq-Yanbu)",
+    "fluid": "crude",
+    "scope": "bypass",
+    "operator": "Saudi Aramco",
+    "supplier_iso": "SA",
+    "bypasses": [
+      "hormuz"
+    ],
+    "start_name": "Abqaiq",
+    "start_lat": 25.93,
+    "start_lon": 49.67,
+    "end_name": "Yanbu",
+    "end_lat": 24.09,
+    "end_lon": 38.06,
+    "capacity": 5.0,
+    "capacity_unit": "mbpd",
+    "status": "operational",
+    "year": 2025,
+    "source": "EIA: 5 million b/d East-West pipeline from Abqaiq to Yanbu on the Red Sea",
+    "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=65504"
+  },
+  {
+    "id": "adcop",
+    "name": "Abu Dhabi Crude Oil Pipeline (Habshan-Fujairah)",
+    "fluid": "crude",
+    "scope": "bypass",
+    "operator": "ADNOC",
+    "supplier_iso": "AE",
+    "bypasses": [
+      "hormuz"
+    ],
+    "start_name": "Habshan",
+    "start_lat": 23.83,
+    "start_lon": 53.62,
+    "end_name": "Fujairah",
+    "end_lat": 25.17,
+    "end_lon": 56.36,
+    "capacity": 1.8,
+    "capacity_unit": "mbpd",
+    "status": "operational",
+    "year": 2025,
+    "source": "EIA: 1.8 million b/d pipeline to the Fujairah terminal on the Gulf of Oman",
+    "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=65504"
+  },
+  {
+    "id": "sumed",
+    "name": "SUMED pipeline (Ain Sukhna-Sidi Kerir)",
+    "fluid": "crude",
+    "scope": "bypass",
+    "operator": "Mubadala Energy",
+    "supplier_iso": null,
+    "bypasses": [
+      "suez"
+    ],
+    "start_name": "Ain Sukhna",
+    "start_lat": 29.6,
+    "start_lon": 32.35,
+    "end_name": "Sidi Kerir",
+    "end_lat": 31.1,
+    "end_lon": 29.65,
+    "capacity": 2.5,
+    "capacity_unit": "mbpd",
+    "status": "operational",
+    "year": 2025,
+    "source": "EIA: SUMED carries crude north through Egypt, 2.5 million b/d",
+    "source_url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/"
+  }
+]

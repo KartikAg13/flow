@@ -16,7 +16,31 @@ def test_build_loads_seeds_and_hormuz_has_oil(tmp_path) -> None:
         """
     ).fetchone()[0]
     assert oil and oil > 100
+    assert conn.execute("SELECT sum(capacity_mmt) FROM spr_sites").fetchone()[0] == 5.33
     conn.close()
+
+
+def test_seed_models_reject_bad_rows() -> None:
+    import pytest
+    from pydantic import ValidationError
+
+    from flow.models import Chokepoint
+
+    row = {
+        "id": "hormuz",
+        "name": "Strait of Hormuz",
+        "lat": 26.6,
+        "lon": 56.3,
+        "transit_volume": 20.9,
+        "transit_unit": "mbpd",
+        "year": 2025,
+        "source": "EIA",
+        "source_url": "https://www.eia.gov/",
+    }
+    Chokepoint.model_validate(row)
+    for bad in ({"id": "Hormuz Strait"}, {"source_url": "eia.gov"}, {"volume": 1}):
+        with pytest.raises(ValidationError):
+            Chokepoint.model_validate(row | bad)
 
 
 def test_append_events_incremental_and_deduplicated(tmp_path) -> None:

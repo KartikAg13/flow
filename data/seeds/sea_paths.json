@@ -1,0 +1,601 @@
+[
+  {
+    "id": "oil-RU-sikka~0",
+    "leg": "oil-RU-sikka",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 7570,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-RU-sikka~1",
+    "leg": "oil-RU-sikka",
+    "passes": [
+      "cape"
+    ],
+    "nm": 12249,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-IQ-sikka~0",
+    "leg": "oil-IQ-sikka",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1295,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-SA-sikka~0",
+    "leg": "oil-SA-sikka",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1156,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-AE-mundra~0",
+    "leg": "oil-AE-mundra",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1014,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-NG-mumbai~0",
+    "leg": "oil-NG-mumbai",
+    "passes": [
+      "cape"
+    ],
+    "nm": 7159,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-NG-mumbai~1",
+    "leg": "oil-NG-mumbai",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8366,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-US-sikka~0",
+    "leg": "oil-US-sikka",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 9824,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-US-sikka~1",
+    "leg": "oil-US-sikka",
+    "passes": [
+      "cape"
+    ],
+    "nm": 12391,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-AO-sikka~0",
+    "leg": "oil-AO-sikka",
+    "passes": [
+      "cape"
+    ],
+    "nm": 6524,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-AO-sikka~1",
+    "leg": "oil-AO-sikka",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8901,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-KW-sikka~0",
+    "leg": "oil-KW-sikka",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1297,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-VE-sikka~0",
+    "leg": "oil-VE-sikka",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8647,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-VE-sikka~1",
+    "leg": "oil-VE-sikka",
+    "passes": [
+      "cape"
+    ],
+    "nm": 10369,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-CO-sikka~0",
+    "leg": "oil-CO-sikka",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 9099,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-CO-sikka~1",
+    "leg": "oil-CO-sikka",
+    "passes": [
+      "cape"
+    ],
+    "nm": 11030,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-MX-sikka~0",
+    "leg": "oil-MX-sikka",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 9704,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "oil-MX-sikka~1",
+    "leg": "oil-MX-sikka",
+    "passes": [
+      "cape"
+    ],
+    "nm": 12171,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-QA-dahej~0",
+    "leg": "lng-QA-dahej",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1298,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-US-dahej~0",
+    "leg": "lng-US-dahej",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 9744,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-US-dahej~1",
+    "leg": "lng-US-dahej",
+    "passes": [
+      "cape"
+    ],
+    "nm": 12198,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-AE-hazira~0",
+    "leg": "lng-AE-hazira",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1291,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-AO-dahej~0",
+    "leg": "lng-AO-dahej",
+    "passes": [
+      "cape"
+    ],
+    "nm": 6618,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-AO-dahej~1",
+    "leg": "lng-AO-dahej",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8833,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-OM-dahej~0",
+    "leg": "lng-OM-dahej",
+    "passes": [],
+    "nm": 753,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-NG-dahej~0",
+    "leg": "lng-NG-dahej",
+    "passes": [
+      "cape"
+    ],
+    "nm": 7285,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-NG-dahej~1",
+    "leg": "lng-NG-dahej",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8415,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-GQ-dahej~0",
+    "leg": "lng-GQ-dahej",
+    "passes": [
+      "cape"
+    ],
+    "nm": 7252,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-GQ-dahej~1",
+    "leg": "lng-GQ-dahej",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8526,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-CM-dahej~0",
+    "leg": "lng-CM-dahej",
+    "passes": [
+      "cape"
+    ],
+    "nm": 7234,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-CM-dahej~1",
+    "leg": "lng-CM-dahej",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8549,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-MZ-dhamra~0",
+    "leg": "lng-MZ-dhamra",
+    "passes": [],
+    "nm": 3852,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-TT-dahej~0",
+    "leg": "lng-TT-dahej",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8511,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "lng-TT-dahej~1",
+    "leg": "lng-TT-dahej",
+    "passes": [
+      "cape"
+    ],
+    "nm": 10094,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-OM-kandla~0",
+    "leg": "urea-OM-kandla",
+    "passes": [],
+    "nm": 623,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-RU-kandla~0",
+    "leg": "urea-RU-kandla",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 7587,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-RU-kandla~1",
+    "leg": "urea-RU-kandla",
+    "passes": [
+      "cape"
+    ],
+    "nm": 12266,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-SA-kandla~0",
+    "leg": "urea-SA-kandla",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1216,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-QA-kandla~0",
+    "leg": "urea-QA-kandla",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1129,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-NG-kandla~0",
+    "leg": "urea-NG-kandla",
+    "passes": [
+      "cape"
+    ],
+    "nm": 7422,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "urea-NG-kandla~1",
+    "leg": "urea-NG-kandla",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 8419,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "dap-SA-kandla~0",
+    "leg": "dap-SA-kandla",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 1307,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "dap-MA-kandla~0",
+    "leg": "dap-MA-kandla",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 5272,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "dap-MA-kandla~1",
+    "leg": "dap-MA-kandla",
+    "passes": [
+      "cape"
+    ],
+    "nm": 9802,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "dap-CN-paradip~0",
+    "leg": "dap-CN-paradip",
+    "passes": [
+      "malacca"
+    ],
+    "nm": 2880,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "dap-CN-paradip~1",
+    "leg": "dap-CN-paradip",
+    "passes": [],
+    "nm": 4001,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-RU-kandla~0",
+    "leg": "mop-RU-kandla",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 7657,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-RU-kandla~1",
+    "leg": "mop-RU-kandla",
+    "passes": [
+      "cape"
+    ],
+    "nm": 12336,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-CA-kandla~0",
+    "leg": "mop-CA-kandla",
+    "passes": [
+      "malacca"
+    ],
+    "nm": 10079,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-CA-kandla~1",
+    "leg": "mop-CA-kandla",
+    "passes": [],
+    "nm": 10677,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-CA-kandla~2",
+    "leg": "mop-CA-kandla",
+    "passes": [
+      "bab_el_mandeb",
+      "suez"
+    ],
+    "nm": 13607,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-JO-kandla~0",
+    "leg": "mop-JO-kandla",
+    "passes": [
+      "bab_el_mandeb"
+    ],
+    "nm": 2959,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-JO-kandla~1",
+    "leg": "mop-JO-kandla",
+    "passes": [
+      "cape",
+      "suez"
+    ],
+    "nm": 12367,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-IL-kandla~0",
+    "leg": "mop-IL-kandla",
+    "passes": [
+      "bab_el_mandeb"
+    ],
+    "nm": 2959,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-IL-kandla~1",
+    "leg": "mop-IL-kandla",
+    "passes": [
+      "cape",
+      "suez"
+    ],
+    "nm": 12367,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "mop-TM-kandla~0",
+    "leg": "mop-TM-kandla",
+    "passes": [
+      "hormuz"
+    ],
+    "nm": 879,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "east_west>sikka~0",
+    "leg": "east_west>sikka",
+    "passes": [
+      "bab_el_mandeb"
+    ],
+    "nm": 2573,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "east_west>sikka~1",
+    "leg": "east_west>sikka",
+    "passes": [
+      "cape",
+      "suez"
+    ],
+    "nm": 12472,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  },
+  {
+    "id": "adcop>mundra~0",
+    "leg": "adcop>mundra",
+    "passes": [],
+    "nm": 764,
+    "source": "searoute 1.6 on the Eurostat SeaRoute marine network: shortest path with the other passages shut",
+    "source_url": "https://github.com/genthalili/searoute-py"
+  }
+]

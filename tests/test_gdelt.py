@@ -53,3 +53,32 @@ def test_alias_and_commodity_hints() -> None:
     assert "mundra" in entities_in(text)
     assert "urea" in commodities_in(text)
     assert "mop" in commodities_in(text)
+    # whole words only: "bureau" is not urea, "adapt" is not DAP, Chinatown is not China
+    assert commodities_in("ukrainian bureau of investigation adapts to scam calls") == []
+    assert entities_in("chinatown parade") == []
+
+
+def test_country_only_and_broad_theme_rows_are_dropped() -> None:
+    def row(i: int, themes: str, url: str, names: str = "") -> dict:
+        return {
+            "GKGRECORDID": f"r{i}",
+            "DATE": "20261104160000",
+            "SourceCommonName": "x.com",
+            "DocumentIdentifier": url,
+            "V2Themes": themes,
+            "V2Locations": "Cleveland, Tennessee, United States",
+            "V2Organizations": "",
+            "V2Tone": "-13.9,0,0,0,0,0,1",
+            "AllNames": names,
+        }
+
+    frame = pd.DataFrame(
+        [
+            row(1, "SANCTIONS;", "https://x.com/news/jail-dockets-11-4-26"),
+            row(2, "UNGP_FORESTS_RIVERS_OCEANS;", "https://x.com/christa-pike-execution"),
+            row(3, "ENERGY;", "https://x.com/top-officials-covered-up-for-scam-call-bureau"),
+            row(4, "ENV_OIL;", "https://x.com/oil-tanker-attacked-strait-of-hormuz"),
+            row(5, "ENV_OIL,120;", "https://x.com/epa-splurges-13-8m-on-training"),
+        ]
+    )
+    assert [e["event_id"] for e in events_from_frame(frame)] == ["r4"]

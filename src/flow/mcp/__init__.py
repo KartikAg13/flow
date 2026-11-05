@@ -1,1 +1,4 @@
-"""MCP servers. Filled in phase 4. Agents must not import graph/sim/data directly."""
+"""MCP servers: world (flow.mcp.world) and graph-sim (flow.mcp.graph_sim).
+
+Agents reach data only through these; they must not import graph/sim/data directly.
+"""

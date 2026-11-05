@@ -3,6 +3,9 @@
     "id": "urea-OM-kandla",
     "commodity": "urea",
     "supplier_iso": "OM",
+    "origin": "Sur",
+    "origin_lat": 22.57,
+    "origin_lon": 59.53,
     "chokepoints": [],
     "indian_port": "kandla",
     "indian_facility": null,
@@ -16,6 +19,9 @@
     "id": "urea-RU-kandla",
     "commodity": "urea",
     "supplier_iso": "RU",
+    "origin": "Ust-Luga",
+    "origin_lat": 59.68,
+    "origin_lon": 28.4,
     "chokepoints": [
       "cape"
     ],
@@ -31,6 +37,9 @@
     "id": "urea-SA-kandla",
     "commodity": "urea",
     "supplier_iso": "SA",
+    "origin": "Jubail",
+    "origin_lat": 27.0,
+    "origin_lon": 49.66,
     "chokepoints": [
       "hormuz"
     ],
@@ -46,6 +55,9 @@
     "id": "urea-QA-kandla",
     "commodity": "urea",
     "supplier_iso": "QA",
+    "origin": "Mesaieed",
+    "origin_lat": 24.99,
+    "origin_lon": 51.56,
     "chokepoints": [
       "hormuz"
     ],
@@ -61,6 +73,9 @@
     "id": "urea-NG-kandla",
     "commodity": "urea",
     "supplier_iso": "NG",
+    "origin": "Onne",
+    "origin_lat": 4.7,
+    "origin_lon": 7.15,
     "chokepoints": [
       "cape"
     ],
@@ -76,6 +91,9 @@
     "id": "urea-XX-paradip",
     "commodity": "urea",
     "supplier_iso": "XX",
+    "origin": null,
+    "origin_lat": null,
+    "origin_lon": null,
     "chokepoints": [
       "malacca"
     ],
@@ -91,6 +109,9 @@
     "id": "dap-SA-kandla",
     "commodity": "dap",
     "supplier_iso": "SA",
+    "origin": "Ras Al Khair",
+    "origin_lat": 27.48,
+    "origin_lon": 49.27,
     "chokepoints": [
       "hormuz"
     ],
@@ -106,6 +127,9 @@
     "id": "dap-MA-kandla",
     "commodity": "dap",
     "supplier_iso": "MA",
+    "origin": "Jorf Lasfar",
+    "origin_lat": 33.12,
+    "origin_lon": -8.63,
     "chokepoints": [
       "cape"
     ],
@@ -121,6 +145,9 @@
     "id": "dap-CN-paradip",
     "commodity": "dap",
     "supplier_iso": "CN",
+    "origin": "Fangcheng",
+    "origin_lat": 21.6,
+    "origin_lon": 108.35,
     "chokepoints": [
       "malacca"
     ],
@@ -136,6 +163,9 @@
     "id": "dap-XX-kakinada",
     "commodity": "dap",
     "supplier_iso": "XX",
+    "origin": null,
+    "origin_lat": null,
+    "origin_lon": null,
     "chokepoints": [
       "malacca"
     ],
@@ -151,6 +181,9 @@
     "id": "mop-RU-kandla",
     "commodity": "mop",
     "supplier_iso": "RU",
+    "origin": "St Petersburg",
+    "origin_lat": 59.9,
+    "origin_lon": 30.2,
     "chokepoints": [
       "cape"
     ],
@@ -166,8 +199,11 @@
     "id": "mop-CA-kandla",
     "commodity": "mop",
     "supplier_iso": "CA",
+    "origin": "Vancouver",
+    "origin_lat": 49.3,
+    "origin_lon": -123.1,
     "chokepoints": [
-      "cape"
+      "malacca"
     ],
     "indian_port": "kandla",
     "indian_facility": null,
@@ -181,6 +217,9 @@
     "id": "mop-JO-kandla",
     "commodity": "mop",
     "supplier_iso": "JO",
+    "origin": "Aqaba",
+    "origin_lat": 29.52,
+    "origin_lon": 35.0,
     "chokepoints": [
       "bab_el_mandeb"
     ],
@@ -196,6 +235,9 @@
     "id": "mop-IL-kandla",
     "commodity": "mop",
     "supplier_iso": "IL",
+    "origin": "Eilat",
+    "origin_lat": 29.55,
+    "origin_lon": 34.96,
     "chokepoints": [
       "bab_el_mandeb"
     ],
@@ -211,6 +253,9 @@
     "id": "mop-TM-kandla",
     "commodity": "mop",
     "supplier_iso": "TM",
+    "origin": "Bandar Abbas",
+    "origin_lat": 27.18,
+    "origin_lon": 56.28,
     "chokepoints": [
       "hormuz"
     ],

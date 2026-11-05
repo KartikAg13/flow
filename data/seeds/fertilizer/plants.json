@@ -3,6 +3,7 @@
     "id": "iffco_kalol",
     "name": "IFFCO Kalol",
     "operator": "IFFCO",
+    "state": "Gujarat",
     "products": [
       "urea"
     ],
@@ -16,6 +17,7 @@
     "id": "iffco_paradeep",
     "name": "IFFCO Paradeep",
     "operator": "IFFCO",
+    "state": "Odisha",
     "products": [
       "dap",
       "urea"
@@ -30,6 +32,7 @@
     "id": "nfl_nangal",
     "name": "NFL Nangal",
     "operator": "NFL",
+    "state": "Punjab",
     "products": [
       "urea"
     ],
@@ -43,6 +46,7 @@
     "id": "rcf_thal",
     "name": "RCF Thal",
     "operator": "RCF",
+    "state": "Maharashtra",
     "products": [
       "urea"
     ],
@@ -56,6 +60,7 @@
     "id": "rcf_trombay",
     "name": "RCF Trombay",
     "operator": "RCF",
+    "state": "Maharashtra",
     "products": [
       "urea"
     ],
@@ -69,6 +74,7 @@
     "id": "chambal_kota",
     "name": "Chambal Fertilizers Kota",
     "operator": "CFCL",
+    "state": "Rajasthan",
     "products": [
       "urea"
     ],
@@ -82,6 +88,7 @@
     "id": "kribhco_hazira",
     "name": "KRIBHCO Hazira",
     "operator": "KRIBHCO",
+    "state": "Gujarat",
     "products": [
       "urea"
     ],
